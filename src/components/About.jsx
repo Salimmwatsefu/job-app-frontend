@@ -32,12 +32,18 @@ function About() {
       />
 
       <div>
-        <h2 class="text-2xl font-medium">
+        <h2 class="text-2xl font-bold text-gray-800">
           About Us
         </h2>
 
         <p class="mt-4 text-sm text-gray-500">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+          eos. Inventore dolor delectus commodi laudantium adipisci, illum amet
+          itaque optio!Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+          eos. Inventore dolor delectus commodi laudantium adipisci, illum amet
+          itaque optio!Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+          eos. Inventore dolor delectus commodi laudantium adipisci, illum amet
+          itaque optio!Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
           eos. Inventore dolor delectus commodi laudantium adipisci, illum amet
           itaque optio!
         </p>
