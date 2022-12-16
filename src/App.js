@@ -1,9 +1,12 @@
 import Navbar from './components/Navbar';
 import './App.css';
-import Home from './components/Home';
 import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import SignUp from './components/user/Signup';
+import  Home from "./components/Home";
+import Blog from "./components/Blog";
+import Contact from './components/Contact';
+
 
 function App() {
   const [user, setUser] = useState(null);
@@ -21,7 +24,16 @@ if (!user) return <SignUp onLogin={setUser} />;
 
   return (
     <div className="App">
-      <Navbar />
+      <div><Navbar /></div>
+
+      <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/blog' element={<Blog/>}/>
+      <Route path='/contact' element={<Contact/>}/>
+      </Routes>
+
+
+
       
 
     <Routes>

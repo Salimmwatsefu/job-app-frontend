@@ -1,8 +1,14 @@
 import React from 'react'
+import About from './About'
+import Footer from './Footer'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>Home
+      <About />
+      <Footer />
+    </div>
+    
   )
 }
 
