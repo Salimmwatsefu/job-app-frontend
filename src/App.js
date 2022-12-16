@@ -1,12 +1,27 @@
 import Navbar from './components/Navbar';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import SignUp from './components/user/Signup';
 import  Home from "./components/Home";
 import Blog from "./components/Blog";
 import Contact from './components/Contact';
 
 
 function App() {
+  const [user, setUser] = useState(null);
+  useEffect(() => {
+    //auto-login
+    fetch("/me").then((r) => {
+      if (r.ok) {
+        r.json().then((user) => setUser(user));
+      }
+    });
+  }, []);
+
+if (!user) return <SignUp onLogin={setUser} />;
+
+
   return (
     <div className="App">
       <div><Navbar /></div>
@@ -20,6 +35,11 @@ function App() {
 
 
       
+
+    <Routes>
+    <Route path='/' element={<Home/>}/>
+      <Route path="/signup" exact component = {SignUp} setUser = {setUser} ></Route>
+    </Routes>
     </div>
   );
 }
