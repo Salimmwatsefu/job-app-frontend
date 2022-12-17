@@ -4,6 +4,7 @@ import Home from './components/Home';
 import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import SignUp from './components/user/Signup';
+import Login from './components/user/Login';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -26,7 +27,8 @@ if (!user) return <SignUp onLogin={setUser} />;
 
     <Routes>
     <Route path='/' element={<Home/>}/>
-      <Route path="/signup" exact component = {SignUp} setUser = {setUser} ></Route>
+      <Route path="/Signup" exact component = {SignUp} setUser = {setUser} ></Route>
+      <Route path="/Login" exact component = {Login} setUser = {setUser}></Route>
     </Routes>
     </div>
   );
