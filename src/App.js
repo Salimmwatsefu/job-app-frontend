@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import SignUp from './components/user/Signup';
 import Login from './components/user/Login';
+import Logout from './components/user/Logout';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -28,7 +29,8 @@ if (!user) return <SignUp onLogin={setUser} />;
     <Routes>
     <Route path='/' element={<Home/>}/>
       <Route path="/Signup" exact component = {SignUp} setUser = {setUser} ></Route>
-      <Route path="/Login" exact component = {Login} setUser = {setUser}></Route>
+      <Route path="/Login" exact component = {Login} setUser =  {setUser} ></Route>
+      <Route path="/logout" exact component= {Logout} setUser ={setUser} ></Route>
     </Routes>
     </div>
   );
