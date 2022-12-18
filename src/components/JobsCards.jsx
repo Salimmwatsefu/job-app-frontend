@@ -15,7 +15,7 @@ const JobsCards = (props) => {
       <div style={{ border: '2px solid #ccc', padding: '32px', margin: '16px' }}>
         <RecentJobsCard
           title="Data Scientist"
-          location="Nakuru"
+          location="Nakuru, Kenya"
           employmentType="Part-time"
         />
       </div>

@@ -2,12 +2,12 @@ import React from 'react';
 
 const RecentJobsCard = (props) => {
   return (
-    <div className="recent-jobs-card">
+    <div>
       <div style={{ display: 'flex', flexDirection: 'row' }}>
-      <h1>{props.title}</h1>
-      <p>{props.location}</p>
-      <p>{props.employmentType}</p>
-    </div>
+        <div style={{ marginRight: '16px' }}>{props.title}</div>
+        <div style={{ marginRight: '16px' }}>{props.location}</div>
+        <div>{props.employmentType}</div>
+      </div>
     </div>
   );
 }
