@@ -1,8 +1,11 @@
 import React from 'react'
+import JobsCards from './JobsCards';
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+        <JobsCards />
+    </div>
   )
 }
 
