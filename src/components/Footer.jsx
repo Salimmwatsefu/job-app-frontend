@@ -287,7 +287,7 @@ function Footer() {
                   />
                 </svg>
 
-                <span class="text-gray-400">john@doe.com</span>
+                <span class="text-gray-400">group22.com</span>
               </a>
             </li>
 

@@ -28,6 +28,7 @@ function About() {
       <img
         alt="Laptop"
         src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+       
         class="h-full w-full rounded-xl object-cover"
       />
 
@@ -51,7 +52,7 @@ function About() {
         <div class="mt-6 sm:text-right">
           <a
             href="#"
-            class="inline-block rounded-lg bg-blue-500 hover:bg-gray-600 px-5 py-3 text-sm font-medium text-white"
+            class="inline-block rounded-lg bg-gray-800 hover:bg-gray-600 px-5 py-3 text-sm font-medium text-white"
           >
             Get Started
           </a>

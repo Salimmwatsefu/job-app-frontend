@@ -10,7 +10,7 @@ import Contact from './components/Contact';
 
 function App() {
   const [user, setUser] = useState(null);
-  useEffect(() => {
+  {/*useEffect(() => {
     //auto-login
     fetch("/me").then((r) => {
       if (r.ok) {
@@ -19,7 +19,7 @@ function App() {
     });
   }, []);
 
-if (!user) return <SignUp onLogin={setUser} />;
+if (!user) return <SignUp onLogin={setUser} />;*/}
 
 
   return (
@@ -36,10 +36,10 @@ if (!user) return <SignUp onLogin={setUser} />;
 
       
 
-    <Routes>
+   {/*} <Routes>
     <Route path='/' element={<Home/>}/>
       <Route path="/signup" exact component = {SignUp} setUser = {setUser} ></Route>
-    </Routes>
+  </Routes>*/}
     </div>
   );
 }
