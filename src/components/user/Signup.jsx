@@ -101,7 +101,7 @@ function SignUp({onLogin}) {
           <h1
             class="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl"
           >
-            Welcome to Squid 🦑
+            Welcome to Job Corner
           </h1>
 
           <p class="mt-4 leading-relaxed text-gray-500">
@@ -205,7 +205,7 @@ function SignUp({onLogin}) {
 
             <p class="mt-4 text-sm text-gray-500 sm:mt-0">
               Already have an account?
-              <a href="#" class="text-gray-700 underline">Log in</a>.
+              <a href="/Login" class="text-gray-700 underline">Log in</a>.
             </p>
 
         
