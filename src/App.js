@@ -1,15 +1,44 @@
 import Navbar from './components/Navbar';
 import './App.css';
+
 import Review from './components/Review';
-import Blog from './components/Blog';
-import Hero from './components/Hero';
+
+import { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import SignUp from './components/user/Signup';
+import  Home from "./components/Home";
+import Blog from "./components/Blog";
+import Contact from './components/Contact';
+
+
 
 function App() {
+  const [user, setUser] = useState(null);
+  {/*useEffect(() => {
+    //auto-login
+    fetch("/me").then((r) => {
+      if (r.ok) {
+        r.json().then((user) => setUser(user));
+      }
+    });
+  }, []);
+
+if (!user) return <SignUp onLogin={setUser} />;*/}
+
+
   return (
     <div className="App">
-      {/* <Blog /> */}
-      <Review/>
-      
+
+      <div><Navbar /></div>
+
+      <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/blog' element={<Blog/>}/>
+      <Route path='/contact' element={<Contact/>}/>
+      </Routes>
+
+
+ 
     </div>
   );
 }
