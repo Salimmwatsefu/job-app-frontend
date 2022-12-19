@@ -7,7 +7,8 @@ import Hero from './components/Hero';
 function App() {
   return (
     <div className="App">
-      <Blog />
+      {/* <Blog /> */}
+      <Review/>
       
     </div>
   );
