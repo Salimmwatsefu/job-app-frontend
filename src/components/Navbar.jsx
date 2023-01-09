@@ -1,8 +1,23 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-
+import { useState, useEffect } from 'react';
+import SignUp from '../components/user/Signup';
+import Login from '../components/user/Login';
+import Logout from '../components/user/Logout';
 
 function Navbar() {
+  const [user, setUser] = useState(null);
+  useEffect(() => {
+    //auto-login
+    fetch("/me").then((r) => {
+      if (r.ok) {
+        r.json().then((user) => setUser(user));
+      }
+    });
+  }, []);
+
+if (!user) return <SignUp onLogin={setUser} />;
+
   return (
     <div>
      <header aria-label="Site Header" class="bg-white h-16  ">
@@ -11,7 +26,7 @@ function Navbar() {
       <div class="md:flex md:items-center md:gap-12 ">
         <a class="block text-gray-600  ml-12 text-xl w-48" href="/">
           <span class="sr-only">Home</span>
-          <img src='https://neojb.brickthemes.com/wp-content/uploads/2018/09/logo.png' className='' />
+          <img src='https://neojb.brickthemes.com/wp-content/uploads/2018/09/logo.png' alt="" className='' />
         </a>
       </div>
 
@@ -29,13 +44,13 @@ function Navbar() {
             </NavLink>
 
 
-           <NavLink to={""}>
-            <li>
-              <a
-                class="text-black transition hover:text-gray-500/75"
-              >
+           <NavLink to={"jobs"}>
+            <li
+             
+                class="text-black transition hover:text-gray-500/75">
+             
                 Browse Jobs
-              </a>
+            
             </li>
             </NavLink>
 
@@ -49,35 +64,41 @@ function Navbar() {
             </li>
             </NavLink>
 
-            <NavLink to={"blog"}>
-            <li>
-              <a
+            <NavLink to={"/blog"}>
+            <li
                 class="text-black transition hover:text-gray-500/75"
               >
                 Blog
-              </a>
+             
             </li>
             </NavLink>
-
-            <NavLink to={""}>
-            <li>
-              <a
-                class="text-black transition hover:text-gray-500/75"
-              >
-                Account
-              </a>
-            </li>
-            </NavLink>
-
+           
             <NavLink to={"contact"}>
-            <li>
-              <a
-                class="text-black transition hover:text-gray-500/75"
-              >
-                Contacts
-              </a>
-            </li>
+            <li class="text-black transition hover:text-gray-500/75">
+              Contacts
+             </li>
             </NavLink>
+            
+            <NavLink to={""}>
+            {/* <li class="text-black transition hover:text-gray-500/75">  */}
+            <select>
+            <option value="">Account</option>
+       
+       <option value=""> 
+          
+           <NavLink to="/signup">Sign Up</NavLink></option>
+       <option value="">
+          
+           <NavLink to="/login" exact component = {Login} setUser =  {setUser} ></NavLink>Log in</option>
+       <option value="">
+          
+           <NavLink to="/logout" exact component= {Logout} setUser ={setUser} ></NavLink>Log out</option></select>
+           {/* Account
+            </li> */}
+         </NavLink>
+       
+
+          
           </ul>
         </nav>
       </div>

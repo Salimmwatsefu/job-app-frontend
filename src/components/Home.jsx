@@ -13,7 +13,7 @@ function Home() {
     <div>
       <Hero />
       <About />
-      <Categories />
+       <Categories />
       <CustomerCards />
       <JobsCards />
       <Footer />

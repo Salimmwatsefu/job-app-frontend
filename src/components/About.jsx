@@ -2,8 +2,8 @@ import React from 'react'
 
 function About() {
   return (
-    <div>
-      <div class="">
+    <div id="about">
+      <div className="">
   <div class=" bg-gray-50 p-6 shadow-sm">
     <button
       type="button"
