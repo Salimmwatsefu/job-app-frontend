@@ -9,6 +9,8 @@ import SignUp from './components/user/Signup';
 import  Home from "./components/Home";
 import Blog from "./components/Blog";
 import Contact from './components/Contact';
+import Ehome from './components/employers/Ehome';
+
 
 
 
@@ -36,9 +38,10 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
       <Route path='/' element={<Home/>}/>
       <Route path='/blog' element={<Blog/>}/>
       <Route path='/contact' element={<Contact/>}/>
-      <Route path="/Signup" exact component = {SignUp} setUser = {setUser} ></Route>
+      <Route path='/ehome' element={<Ehome/>}/>
+      {/*<Route path="/Signup" exact component = {SignUp} setUser = {setUser} ></Route>
       <Route path="/Login" exact component = {Login} setUser =  {setUser} ></Route>
-      <Route path="/logout" exact component= {Logout} setUser ={setUser} ></Route>
+  <Route path="/logout" exact component= {Logout} setUser ={setUser} ></Route>*/}
       </Routes>
 
 

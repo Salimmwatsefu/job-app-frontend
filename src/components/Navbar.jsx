@@ -39,12 +39,12 @@ function Navbar() {
             </li>
             </NavLink>
 
-            <NavLink to={""}>
+            <NavLink to={"ehome"}>
             <li>
               <a
                 class="text-black transition hover:text-gray-500/75"
               >
-                Post a job
+                For Employers
               </a>
             </li>
             </NavLink>
