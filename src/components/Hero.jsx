@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 function Hero() {
   return (
     <div>
@@ -67,7 +69,7 @@ function Hero() {
         </a>
 
         <a
-          href="#"
+        href="#about"
           class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-gray-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
         >
           Learn More
