@@ -1,8 +1,8 @@
 import Navbar from './components/Navbar';
 import './App.css';
-
 import Review from './components/Review';
-
+import Login from './components/user/Login';
+import Logout from './components/user/Logout';
 import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import SignUp from './components/user/Signup';
