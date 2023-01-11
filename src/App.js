@@ -1,13 +1,13 @@
 import Navbar from './components/Navbar';
 import './App.css';
 
-import Review from './components/Review';
+//import Review from './components/Review';
 
-// import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
-// import SignUp from './components/user/Signup';
-// import Login from './components/user/Login';
-// import Logout from './components/user/Logout';
+import SignUp from './components/user/Signup';
+import Login from './components/user/Login';
+import Logout from './components/user/Logout';
 
 import  Home from "./components/Home";
 import Blog from "./components/Blog";
@@ -16,12 +16,12 @@ import Contact from './components/Contact';
 import Ehome from './components/employers/Ehome';
 
 
-import Account from './components/Account';
+//import Account from './components/Account';
 
 
 
 function App() {
-//   const [user, setUser] = useState(null);
+  const [user, setUser] = useState(null);
 //   useEffect(() => {
 //     //auto-login
 //     fetch("/me").then((r) => {
@@ -45,14 +45,14 @@ function App() {
 
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/ehome' element={<Ehome/>}/>
-      {/*<Route path="/Signup" exact component = {SignUp} setUser = {setUser} ></Route>
+      {/* <Route path="/Signup" exact component = {SignUp} setUser = {setUser} ></Route>
       <Route path="/Login" exact component = {Login} setUser =  {setUser} ></Route>
-  <Route path="/logout" exact component= {Logout} setUser ={setUser} ></Route>*/}
+  <Route path="/logout" exact component= {Logout} setUser ={setUser} ></Route> */}
 
       {/* <Route path='/account/*' element={<Account/>}/> */}
-      {/* <Route path="/signup" exact component = {SignUp} setUser = {setUser} ></Route>
+      <Route path="/signup" exact component = {SignUp} setUser = {setUser} ></Route>
       <Route path="/Login" exact component = {Login} setUser =  {setUser} ></Route>
-      <Route path="/logout" exact component= {Logout} setUser ={setUser} ></Route> */}
+      <Route path="/logout" exact component= {Logout} setUser ={setUser} ></Route>
      <Route path='/contact' element={<Contact/>}/>
 
       </Routes>

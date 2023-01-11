@@ -54,61 +54,57 @@ if (!user) return <SignUp onLogin={setUser} />;
             </li>
             </NavLink>
 
-            <NavLink to={"ehome"}>
-            <li>
-              <a
-                class="text-black transition hover:text-gray-500/75"
-              >
-                For Employers
-              </a>
-            </li>
-            </NavLink>
-
-            <NavLink to={"/blog"}>
-            <li
-                class="text-black transition hover:text-gray-500/75"
-              >
-                Blog
-             
-            </li>
-            </NavLink>
-           
-            <NavLink to={"contact"}>
-            <li class="text-black transition hover:text-gray-500/75">
-              Contacts
-             </li>
-            </NavLink>
-            
-            <NavLink to={""}>
-            {/* <li class="text-black transition hover:text-gray-500/75">  */}
-            <select>
-            <option value="">Account</option>
+<NavLink to={"ehome"}>
+<li>
+<a class="text-black transition hover:text-gray-500/75">
+For Employers
+</a>
+</li>
+</NavLink>
+<NavLink to={"/blog"}>
+        <li
+            class="text-black transition hover:text-gray-500/75"
+          >
+            Blog
+         
+        </li>
+        </NavLink>
        
-       <option value=""> 
-          
-           <NavLink to="/signup">Sign Up</NavLink></option>
-       <option value="">
-          
-           <NavLink to="/login" exact component = {Login} setUser =  {setUser} ></NavLink>Log in</option>
-       <option value="">
-          
-           <NavLink to="/logout" exact component= {Logout} setUser ={setUser} ></NavLink>Log out</option></select>
-           {/* Account
-            </li> */}
-         </NavLink>
-       
+        <NavLink to={"contact"}>
+        <li class="text-black transition hover:text-gray-500/75">
+          Contacts
+         </li>
+        </NavLink>
+        
+        <NavLink to={""}>
+        <li class="text-black transition hover:text-gray-500/75 md:hidden"> 
+          Account
+        </li>
+     </NavLink>
 
-          
-          </ul>
-        </nav>
-      </div>
+    <div class="md:block">
+      <select>
+        <option value="">Account</option>
+        <option value=""> 
+          <NavLink to="/SignUp">Sign Up</NavLink>
+        </option>
+        <option value="">
+          <NavLink to="/Login" exact component = {Login} setUser =  {setUser} >Log in</NavLink>
+        </option>
+        <option value="">
+          <NavLink to="/Logout" exact component= {Logout} setUser ={setUser} >Log out</NavLink>
+        </option>
+      </select>
     </div>
+      </ul>
+    </nav>
   </div>
+</div>
+</div>
 </header>
-
-
-    </div>
-  )
+</div>
+)
 }
 
-export default Navbar
+export default Navbar;
+
