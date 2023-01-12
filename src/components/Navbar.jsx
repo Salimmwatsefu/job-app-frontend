@@ -7,7 +7,7 @@ import Logout from '../components/user/Logout';
 
 function Navbar() {
   const [user, setUser] = useState(null);
-  useEffect(() => {
+ {/* useEffect(() => {
     //auto-login
     fetch("/me").then((r) => {
       if (r.ok) {
@@ -16,7 +16,7 @@ function Navbar() {
     });
   }, []);
 
-if (!user) return <SignUp onLogin={setUser} />;
+if (!user) return <SignUp onLogin={setUser} />;*/}
 
   return (
     <div>
@@ -39,7 +39,7 @@ if (!user) return <SignUp onLogin={setUser} />;
                 class="text-black transition hover:text-gray-500/75"
               >
                 Home
-              </a>
+              </a>-
             </li>
             </NavLink>
 

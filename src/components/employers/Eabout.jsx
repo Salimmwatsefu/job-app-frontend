@@ -8,7 +8,7 @@ function Eabout() {
       <div
         class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full"
       >
-        <p class="py-20 text-black font-extrabold text-4xl">
+        <p class="py-16 text-black font-extrabold text-4xl">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic
           .
         </p>
@@ -21,7 +21,10 @@ function Eabout() {
         We’ve re-invented how talented people find jobs in tech
         </p>
 
-        <p className='text-center mt-7 font-medium text-lg'>Excellent</p>
+        <img
+        src='https://storage.googleapis.com/otta-static/images/trustpilot/static_microstar.png'
+        className='mt-5'
+        />
       </div>
     </div>
   </div>
