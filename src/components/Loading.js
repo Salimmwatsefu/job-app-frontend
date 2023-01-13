@@ -1,5 +1,5 @@
 import React from 'react'
-
+import image from '../components/Image/image1.jpeg'
 
 
 const Loading = () => {
@@ -11,7 +11,10 @@ const Loading = () => {
       src="https://media.tenor.com/UnFx-k_lSckAAAAM/amalie-steiness.gif"
       class="h-5 w-full object-contain sm:h-half"
     />
-       </div>
+    <div className='image_container'> 
+    </div>
+          
+     </div>
   );
 };
 
