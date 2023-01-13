@@ -41,9 +41,9 @@ function Footer() {
 
           <li>
             <a
-              href="/"
+              href="https://www.instagram.com/career_connect254/"
               rel="noreferrer"
-              target="_blank"
+              target="https://www.instagram.com/career_connect254/"
               class="text-teal-700 transition hover:text-teal-700/75"
             >
               <span class="sr-only">Instagram</span>
