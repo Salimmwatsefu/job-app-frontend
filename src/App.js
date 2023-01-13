@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import './App.css';
+import Loading from './components/Loading';
 import Review from './components/Review';
 import Login from './components/user/Login';
 import Logout from './components/user/Logout';
@@ -13,7 +14,9 @@ import Contact from './components/Contact';
 
 
 function App() {
+  const [loading, setLoading] = useState(false)
   const [user, setUser] = useState(null);
+
   {/*useEffect(() => {
     //auto-login
     fetch("/me").then((r) => {
@@ -34,6 +37,7 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
 
       <Routes>
       <Route path='/' element={<Home/>}/>
+      <Route path='/loading' element={<Loading/>}/>
       <Route path='/blog' element={<Blog/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path="/Signup" exact component = {SignUp} setUser = {setUser} ></Route>

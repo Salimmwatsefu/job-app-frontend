@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.loading{
+    text-align: center;
+    font-size: 98px;
+    
+}
