@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 import { useState, useEffect } from 'react';
 // import SignUp from '../components/user/Signup';
@@ -87,23 +88,18 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
              </li>
             </NavLink>
             
-  
+     
+    <Dropdown>
+      <Dropdown.Toggle variant="success" id="dropdown-basic">
+        Account
+      </Dropdown.Toggle>
 
-
-    <div class="md:block">
-      <select>
-        <option value="">Account</option>
-        <option value=""> 
-          <NavLink to="/SignUp">Sign Up</NavLink>
-        </option>
-        <option value="">
-          <NavLink to="/Login">Log in</NavLink>
-        </option>
-        <option value="">
-          <NavLink to="/Logout">Log out</NavLink>
-        </option>
-      </select>
-    </div>
+      <Dropdown.Menu>
+        <Dropdown.Item href="/signup">Signup</Dropdown.Item>
+        <Dropdown.Item href="/Login">Login</Dropdown.Item>
+        <Dropdown.Item href="/">Logout</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
       </ul>
     </nav>
   </div>
