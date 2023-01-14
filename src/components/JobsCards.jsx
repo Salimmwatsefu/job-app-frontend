@@ -39,28 +39,22 @@ const JobsCards = (props) => {
         </div>
         <div style={{ border: '2px solid #ccc', padding: '32px', margin: '16px' }}>
           <RecentJobsCard
-            name="Recent Jobs"
-            title="Data Scientist"
-            location="Nakuru, Kenya"
-            employmentType="Part-time"
-          />
-          <RecentJobsCard
-            name="Recent Jobs"
-            title="Data Analyst"
-            location="Nakuru, Kenya"
-            employmentType="Part-time"
-          />
-          <RecentJobsCard
-            name="Recent Jobs"
-            title="Business Analyst"
-            location="Nakuru, Kenya"
-            employmentType="Part-time"
-          />
-          <RecentJobsCard
-            name="Recent Jobs"
-            title="Product Manager"
-            location="Nakuru, Kenya"
-            employmentType="Part-time"
+          name="Recent Jobs"
+          title="Data Scientist"
+          location="Nakuru, Kenya"
+          employmentType="Part-time"
+        />
+        <RecentJobsCard
+          name="Recent Jobs"
+          title="Data Analyst"
+          location="Nakuru, Kenya"
+          employmentType="Part-time"
+        />
+        <RecentJobsCard
+          name="Recent Jobs"
+          title="Business Analyst"
+          location="Nakuru, Kenya"
+          employmentType="Part-time"
           />
           <RecentJobsCard
             name="Recent Jobs"
@@ -68,11 +62,6 @@ const JobsCards = (props) => {
             location="Nakuru, Kenya"
             employmentType="Part-time"
           />
-
-          <FeaturedJobsCard />
-        </div>
-        <div style={{ border: '2px solid #ccc', padding: '32px', margin: '16px' }}>
-          <RecentJobsCard />
         </div>
       </div>
     );
