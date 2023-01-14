@@ -6,28 +6,34 @@ import { useState, useEffect } from 'react';
 // import Login from '../components/user/Login';
 // import Logout from '../components/user/Logout';
 
-function Navbar({setUser}) {
-//   const [user, setUser] = useState(null);
-//   useEffect(() => {
-//     //auto-login
-//     fetch("/me").then((r) => {
-//       if (r.ok) {
-//         r.json().then((user) => setUser(user));
-//       }
-//     });
-//   }, []);
 
-// if (!user) return <Login onLogin={setUser} />;
+function Navbar() {
+  const [user, setUser] = useState(null);
+ {/* useEffect(() => {
+    //auto-login
+    fetch("/me").then((r) => {
+      if (r.ok) {
+        r.json().then((user) => setUser(user));
+      }
+    });
+  }, []);
+
+if (!user) return <SignUp onLogin={setUser} />;*/}
 
   return (
     <div>
-     <header aria-label="Site Header" className="bg-white h-16  ">
-  <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 ">
-    <div className="flex h-16 items-center justify-between ">
-      <div className="md:flex md:items-center md:gap-12 ">
-        <a className="block text-gray-600  ml-12 text-xl w-48" href="/">
-          <span className="sr-only">Home</span>
-          <img src='https://neojb.brickthemes.com/wp-content/uploads/2018/09/logo.png' alt="" classNameName='' />
+     <header aria-label="Site Header" class="bg-white h-16  ">
+  <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 ">
+    <div class="flex h-16 items-center justify-between ">
+      <div class="md:flex md:items-center md:gap-12 ">
+        <a class="block text-gray-600  ml-12 text-xl w-48" href="/">
+          <span class="sr-only">Home</span>
+
+          <img src='./Image/image1.jpeg' className='' />
+
+          <img src='https://neojb.brickthemes.com/wp-content/uploads/2018/09/logo.png' alt="" className='' />
+
+
         </a>
       </div>
 
@@ -40,7 +46,7 @@ function Navbar({setUser}) {
                 className="text-black transition hover:text-gray-500/75"
               >
                 Home
-              </a>
+              </a>-
             </li>
             </NavLink>
 
@@ -55,12 +61,12 @@ function Navbar({setUser}) {
             </li>
             </NavLink>
 
-            <NavLink to={""}>
+            <NavLink to={"ehome"}>
             <li>
               <a
                 className="text-black transition hover:text-gray-500/75"
               >
-                Post a job
+                For Employers
               </a>
             </li>
             </NavLink>

@@ -18,9 +18,9 @@ function Footer() {
         <ul class="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
           <li>
             <a
-              href="/"
+              href="https://www.facebook.com/profile.php?id=100089460190476"
               rel="noreferrer"
-              target="_blank"
+              target="https://www.facebook.com/profile.php?id=100089460190476"
               class="text-teal-700 transition hover:text-teal-700/75"
             >
               <span class="sr-only">Facebook</span>
@@ -41,9 +41,9 @@ function Footer() {
 
           <li>
             <a
-              href="/"
+              href="https://www.instagram.com/career_connect254/"
               rel="noreferrer"
-              target="_blank"
+              target="https://www.instagram.com/career_connect254/"
               class="text-teal-700 transition hover:text-teal-700/75"
             >
               <span class="sr-only">Instagram</span>
@@ -64,9 +64,9 @@ function Footer() {
 
           <li>
             <a
-              href="/"
+              href="https://twitter.com/CareerConnect13"
               rel="noreferrer"
-              target="_blank"
+              target="https://twitter.com/CareerConnect13"
               class="text-teal-700 transition hover:text-teal-700/75"
             >
               <span class="sr-only">Twitter</span>
@@ -85,9 +85,9 @@ function Footer() {
 
           <li>
             <a
-              href="/"
+              href="https://github.com/Salimmwatsefu/job-app-frontend"
               rel="noreferrer"
-              target="_blank"
+              target="https://github.com/Salimmwatsefu/job-app-frontend"
               class="text-teal-700 transition hover:text-teal-700/75"
             >
               <span class="sr-only">GitHub</span>

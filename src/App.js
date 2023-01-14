@@ -1,19 +1,32 @@
 import React, {useState, useEffect} from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
-
+import Loading from './components/Loading';
 import Review from './components/Review';
 
-// import { useState, useEffect } from 'react';
+import Login from './components/user/Login';
+import Logout from './components/user/Logout';
+import { useState, useEffect } from 'react';
+
+
 import { Routes, Route } from 'react-router-dom';
+
 import SignUp from './components/user/Signup';
 import Login from './components/user/Login';
 import Logout from './components/user/Logout';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Ehome from './components/employers/Ehome';
+
+
+import Account from './components/Account';
+
+
+
 
 import  Home from "./components/Home";
 import Blog from "./components/Blog";
 import Contact from './components/Contact';
+
 import Jobs from './components/Jobs';
 // import JobsCards from './components/JobsCards';
 
@@ -46,13 +59,20 @@ if (!user) return <Login onLogin={setUser} />;
       <div><Navbar setUser={setUser}/></div>
      <Routes>
       <Route path='/' element={<Home/>}/>
+      <Route path='/loading' element={<Loading/>}/>
       <Route path='/blog' element={<Blog/>}/>
+
       <Route path='/jobs' element={<Jobs jobs={jobs}/>}/>
+
+      <Route path='/contact' element={<Contact/>}/>
+      <Route path='/ehome' element={<Ehome/>}/>
+  
       {/* <Route path='/account/*' element={<Account/>}/> */}
       <Route path="/signup"  element={<SignUp />} />
       <Route path="/Login"  element={<Login />} />
       <Route path="/logout" exact component= {Logout} setUser ={setUser} />
      <Route path='/contact' element={<Contact/>}/>
+
       </Routes>
 </div>
   );
