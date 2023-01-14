@@ -109,7 +109,7 @@ function Efooter() {
 
         <li>
           <a class="hover:underline  " href="/">
-            History
+            Home
           </a>
         </li>
 
@@ -121,13 +121,13 @@ function Efooter() {
 
         <li>
           <a class="hover:underline  " href="/">
-            Projects
+            Terms & conditions
           </a>
         </li>
 
         <li>
           <a class="hover:underline " href="/">
-            Blog
+            Contact
           </a>
         </li>
       </ul>
