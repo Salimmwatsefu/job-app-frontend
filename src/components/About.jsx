@@ -51,7 +51,7 @@ function About() {
 
         <div class="mt-6 sm:text-right">
           <a
-            href="#"
+            href="/jobs"
             class="inline-block rounded-lg bg-gray-800 hover:bg-gray-600 px-5 py-3 text-sm font-medium text-white"
           >
             Get Started

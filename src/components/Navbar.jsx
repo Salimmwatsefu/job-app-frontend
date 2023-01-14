@@ -1,9 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+
 import { useState, useEffect } from 'react';
-import SignUp from '../components/user/Signup';
-import Login from '../components/user/Login';
-import Logout from '../components/user/Logout';
+// import SignUp from '../components/user/Signup';
+// import Login from '../components/user/Login';
+// import Logout from '../components/user/Logout';
+
 
 function Navbar() {
   const [user, setUser] = useState(null);
@@ -31,16 +33,17 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
 
           <img src='https://neojb.brickthemes.com/wp-content/uploads/2018/09/logo.png' alt="" className='' />
 
+
         </a>
       </div>
 
-      <div class="hidden md:block">
+      <div className="hidden md:block">
         <nav aria-label="Site Nav">
-          <ul class="flex items-center gap-14 text-sm font-medium pr-16">
+          <ul className="flex items-center gap-14 text-sm font-medium pr-16">
             <NavLink to="/">
             <li>
               <a
-                class="text-black transition hover:text-gray-500/75"
+                className="text-black transition hover:text-gray-500/75"
               >
                 Home
               </a>-
@@ -48,10 +51,10 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
             </NavLink>
 
 
-           <NavLink to={"jobs"}>
+           <NavLink to="/jobs">
             <li
              
-                class="text-black transition hover:text-gray-500/75">
+                className="text-black transition hover:text-gray-500/75">
              
                 Browse Jobs
             
@@ -61,7 +64,7 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
             <NavLink to={"ehome"}>
             <li>
               <a
-                class="text-black transition hover:text-gray-500/75"
+                className="text-black transition hover:text-gray-500/75"
               >
                 For Employers
               </a>
@@ -70,7 +73,7 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
 
             <NavLink to={"/blog"}>
             <li
-                class="text-black transition hover:text-gray-500/75"
+                className="text-black transition hover:text-gray-500/75"
               >
                 Blog
              
@@ -78,28 +81,23 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
             </NavLink>
            
             <NavLink to={"contact"}>
-            <li class="text-black transition hover:text-gray-500/75">
+            <li className="text-black transition hover:text-gray-500/75">
               Contacts
              </li>
             </NavLink>
             
-            <NavLink to={""}>
-            {/* <li class="text-black transition hover:text-gray-500/75">  */}
-            <select>
-            <option value="">Account</option>
-       
-       <option value=""> 
-          
-           <NavLink to="/signup">Sign Up</NavLink></option>
-       <option value="">
-          
-           <NavLink to="/login" exact component = {Login} setUser =  {setUser} ></NavLink>Log in</option>
-       <option value="">
-          
-           <NavLink to="/logout" exact component= {Logout} setUser ={setUser} ></NavLink>Log out</option></select>
-           {/* Account
-            </li> */}
-         </NavLink>
+            <NavLink href="">
+            <div className="dropdown">
+  <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Account
+  </button>
+  <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a className="dropdown-item" href="/signup">Sign up</a>
+    <a className="dropdown-item" href="/Login">Login</a>
+    <a className="dropdown-item" href="Login">Logout</a>
+  </div>
+</div>
+          </NavLink>
        
 
           

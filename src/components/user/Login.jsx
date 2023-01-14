@@ -1,7 +1,10 @@
-{/*import { useState } from 'react';
 
-function Login({onLogin}) {
+import React, {useState} from 'react'
 
+
+
+
+function Login({ onLogin }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
@@ -29,7 +32,7 @@ function Login({onLogin}) {
 
   return (
    
-<section id="login" class="relative flex flex-wrap lg:h-screen lg:items-center">
+<section id="Login" class="relative flex flex-wrap lg:h-screen lg:items-center">
   <div class="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
     <div class="mx-auto max-w-lg text-center">
       <h1 class="text-2xl font-bold sm:text-3xl">Get started today!</h1>
@@ -78,7 +81,7 @@ function Login({onLogin}) {
       <div class="flex items-center justify-between">
         <p class="text-sm text-gray-500">
           No account?
-          <a href="signup" class="underline">Sign up</a>
+          <a href="/signup" class="underline">Sign up</a>
         </p>
 
         <button
@@ -102,4 +105,5 @@ function Login({onLogin}) {
   )
 }
 
-export default Login*/}
+export default Login;
+
