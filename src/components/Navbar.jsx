@@ -1,13 +1,15 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+
 import { useState, useEffect } from 'react';
-import SignUp from '../components/user/Signup';
-import Login from '../components/user/Login';
-import Logout from '../components/user/Logout';
+// import SignUp from '../components/user/Signup';
+// import Login from '../components/user/Login';
+// import Logout from '../components/user/Logout';
+
 
 function Navbar() {
   const [user, setUser] = useState(null);
-  useEffect(() => {
+ {/* useEffect(() => {
     //auto-login
     fetch("/me").then((r) => {
       if (r.ok) {
@@ -16,7 +18,7 @@ function Navbar() {
     });
   }, []);
 
-if (!user) return <SignUp onLogin={setUser} />;
+if (!user) return <SignUp onLogin={setUser} />;*/}
 
   return (
     <div>
@@ -26,61 +28,67 @@ if (!user) return <SignUp onLogin={setUser} />;
       <div class="md:flex md:items-center md:gap-12 ">
         <a class="block text-gray-600  ml-12 text-xl w-48" href="/">
           <span class="sr-only">Home</span>
+
+          <img src='./Image/image1.jpeg' className='' />
+
           <img src='https://neojb.brickthemes.com/wp-content/uploads/2018/09/logo.png' alt="" className='' />
+
+
         </a>
       </div>
 
-      <div class="hidden md:block">
+      <div className="hidden md:block">
         <nav aria-label="Site Nav">
-          <ul class="flex items-center gap-14 text-sm font-medium pr-16">
+          <ul className="flex items-center gap-14 text-sm font-medium pr-16">
             <NavLink to="/">
             <li>
               <a
-                class="text-black transition hover:text-gray-500/75"
+                className="text-black transition hover:text-gray-500/75"
               >
                 Home
-              </a>
+              </a>-
             </li>
             </NavLink>
 
 
-           <NavLink to={"jobs"}>
+           <NavLink to="/jobs">
             <li
              
-                class="text-black transition hover:text-gray-500/75">
+                className="text-black transition hover:text-gray-500/75">
              
                 Browse Jobs
             
             </li>
             </NavLink>
 
-<NavLink to={"ehome"}>
-<li>
-<a class="text-black transition hover:text-gray-500/75">
-For Employers
-</a>
-</li>
-</NavLink>
-<NavLink to={"/blog"}>
-        <li
-            class="text-black transition hover:text-gray-500/75"
-          >
-            Blog
-         
-        </li>
-        </NavLink>
-       
-        <NavLink to={"contact"}>
-        <li class="text-black transition hover:text-gray-500/75">
-          Contacts
-         </li>
-        </NavLink>
-        
-        <NavLink to={""}>
-        <li class="text-black transition hover:text-gray-500/75 md:hidden"> 
-          Account
-        </li>
-     </NavLink>
+
+            <NavLink to={"ehome"}>
+            <li>
+              <a
+                className="text-black transition hover:text-gray-500/75"
+              >
+                For Employers
+              </a>
+            </li>
+            </NavLink>
+
+            <NavLink to={"/blog"}>
+            <li
+                className="text-black transition hover:text-gray-500/75"
+              >
+                Blog
+             
+            </li>
+            </NavLink>
+           
+            <NavLink to={"contact"}>
+            <li className="text-black transition hover:text-gray-500/75">
+              Contacts
+             </li>
+            </NavLink>
+            
+  
+
 
     <div class="md:block">
       <select>

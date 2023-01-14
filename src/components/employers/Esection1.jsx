@@ -2,243 +2,102 @@ import React from 'react'
 
 function Esection1() {
   return (
-    <section>
-  <div class="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+    <section className='bg-yellow-300 '>
+  <div class="max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-28 ">
 
     <div className='max-w-3xl  mx-auto'>
-        <h1 className='text-5xl text-center font-extrabold'>There’s an easier way to achieve your hiring goals</h1>
+        <h1 className='text-5xl text-center font-extrabold mb-20 mt-10'>There’s an easier way to achieve your hiring goals</h1>
     </div>
     <div
-      class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16"
+      class="grid grid-cols-1 gap-y-8  lg:grid-cols-2 lg:items-center lg:gap-x-20 lg:mx-auto"
     >
         
       <div class="mx-auto max-w-lg text-center lg:mx-0 lg:text-left">
-        <h2 class="text-3xl font-bold sm:text-4xl">Find your career path</h2>
+       <div>
+       <img
+        alt="Laptop"
+        src="https://otta.com/_next/static/media/easier-way-sourcing.d7aab415.svg"
+       
+        class="h-full w-full rounded-xl object-cover"
+      />
+       </div>
+       <h2 className='text-3xl font-bold text-center mt-10'>Source 3x more effectively</h2>
 
-        <p class="mt-4 text-gray-600">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero
-          aliquid sint distinctio iure ipsum cupiditate? Quis, odit assumenda?
-          Deleniti quasi inventore, libero reiciendis minima aliquid tempora.
-          Obcaecati, autem.
+        <p class="mt-7  text-center max-w-md mx-auto mb-20">
+        Achieve 3x higher response rates than LinkedIn when you come across that perfect match. We attract people looking to work exclusively at companies like yours and equip you with insights into their intent & preferences.
         </p>
 
-        <a
-          class="mt-8 inline-flex items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
-          href="/get-started"
-        >
-          <span class="text-sm font-medium"> Get Started </span>
+        <div>
+       <img
+        alt="Laptop"
+        src="https://otta.com/_next/static/media/easier-way-brand.d699faa5.svg"
+       
+        class="h-full w-full rounded-xl object-cover"
+      />
+       </div>
 
-          <svg
-            class="ml-3 h-5 w-5"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M17 8l4 4m0 0l-4 4m4-4H3"
-            />
-          </svg>
-        </a>
+       <h2 className='text-3xl font-bold text-center mt-10'>Build your employer brand</h2>
+
+        <p class="mt-4 text-black text-center max-w-md mx-auto ">
+        Stand out to top candidates looking at your job ad. No other platform allows you to showcase the same level of detail about what makes your company a great place to work - highlight your mission, values, culture and more.
+        </p>
+
+        
       </div>
 
-      <div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
-        <a
-          class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-          href="/accountant"
-        >
-          <span class="inline-block rounded-lg bg-gray-50 p-3">
-            <svg
-              class="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-              <path
-                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-              ></path>
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-              ></path>
-            </svg>
-          </span>
+      <div class=" h-full">
+        
+      <div class="mx-auto max-w-lg text-center lg:mx-0 lg:text-left">
+       <div>
+       <img
+        alt="Laptop"
+        src="https://otta.com/_next/static/media/easier-way-diversity.b57658bc.svg"
+       
+        class="h-full w-full rounded-xl object-cover"
+      />
+       </div>
+       <h2 className='text-3xl font-bold text-center mt-5'>Hire a more diverse team</h2>
 
-          <h2 class="mt-2 font-bold">Accountant</h2>
+        <p class="mt-8 mb-20 text-center max-w-md mx-auto ">
+        Hire underrepresented talent across all functions, through inbound applications and sourcing. Our product is designed to make the world of tech accessible for talented candidates from all backgrounds.
+        </p>
 
-          <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-            Lorem ipsum dolor sit amet consectetur.
-          </p>
-        </a>
+        <div>
+       <img
+        alt="Laptop"
+        src="https://otta.com/_next/static/media/easier-way-insights.27849e22.svg"
+       
+        class="h-full w-full rounded-xl object-cover"
+      />
+       </div>
 
-        <a
-          class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-          href="/accountant"
-        >
-          <span class="inline-block rounded-lg bg-gray-50 p-3">
-            <svg
-              class="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-              <path
-                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-              ></path>
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-              ></path>
-            </svg>
-          </span>
+       <h2 className='text-3xl font-bold text-center mt-24'>Get ahead of the pack</h2>
 
-          <h2 class="mt-2 font-bold">Accountant</h2>
+        <p class="mt-4 text-center max-w-md mx-auto ">
+        Whether it’s optimising current processes or making your first hire, our expert team work closely with you, to execute strategies based on best practices and live data from thousands of tech companies on Otta.
+        </p>
 
-          <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-            Lorem ipsum dolor sit amet consectetur.
-          </p>
-        </a>
-
-        <a
-          class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-          href="/accountant"
-        >
-          <span class="inline-block rounded-lg bg-gray-50 p-3">
-            <svg
-              class="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-              <path
-                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-              ></path>
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-              ></path>
-            </svg>
-          </span>
-
-          <h2 class="mt-2 font-bold">Accountant</h2>
-
-          <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-            Lorem ipsum dolor sit amet consectetur.
-          </p>
-        </a>
-
-        <a
-          class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-          href="/accountant"
-        >
-          <span class="inline-block rounded-lg bg-gray-50 p-3">
-            <svg
-              class="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-              <path
-                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-              ></path>
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-              ></path>
-            </svg>
-          </span>
-
-          <h2 class="mt-2 font-bold">Accountant</h2>
-
-          <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-            Lorem ipsum dolor sit amet consectetur.
-          </p>
-        </a>
-
-        <a
-          class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-          href="/accountant"
-        >
-          <span class="inline-block rounded-lg bg-gray-50 p-3">
-            <svg
-              class="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-              <path
-                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-              ></path>
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-              ></path>
-            </svg>
-          </span>
-
-          <h2 class="mt-2 font-bold">Accountant</h2>
-
-          <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-            Lorem ipsum dolor sit amet consectetur.
-          </p>
-        </a>
-
-        <a
-          class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-          href="/accountant"
-        >
-          <span class="inline-block rounded-lg bg-gray-50 p-3">
-            <svg
-              class="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-              <path
-                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-              ></path>
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-              ></path>
-            </svg>
-          </span>
-
-          <h2 class="mt-2 font-bold">Accountant</h2>
-
-          <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-            Lorem ipsum dolor sit amet consectetur.
-          </p>
-        </a>
+        
+      </div>
       </div>
     </div>
+    <div className=' flex justify-center mt-28'>
+    
+    <a
+    href='mailto:sjmwatsefu@gmail.com'
+  class="group relative inline-block overflow-hidden  border-yellow-600 border-2 px-8 py-3 focus:outline-none focus:ring rounded-3xl"
+>
+  <span
+    class="absolute inset-x-0 bottom-0 h-[2px] bg-yellow-600 transition-all group-hover:h-full group-active:bg-indigo-500"
+  ></span>
+
+  <span
+    class="relative text-sm font-bold  transition-colors group-hover:text-white"
+  >
+    Let's Talk
+  </span>
+</a>
+            </div>
   </div>
 </section>
 

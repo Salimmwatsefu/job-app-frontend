@@ -68,6 +68,11 @@ const JobsCards = (props) => {
             location="Nakuru, Kenya"
             employmentType="Part-time"
           />
+
+          <FeaturedJobsCard />
+        </div>
+        <div style={{ border: '2px solid #ccc', padding: '32px', margin: '16px' }}>
+          <RecentJobsCard />
         </div>
       </div>
     );

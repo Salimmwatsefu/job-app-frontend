@@ -38,20 +38,24 @@ function About() {
         </h2>
 
         <p class="mt-4 text-sm text-gray-500">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-          eos. Inventore dolor delectus commodi laudantium adipisci, illum amet
-          itaque optio!Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-          eos. Inventore dolor delectus commodi laudantium adipisci, illum amet
-          itaque optio!Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-          eos. Inventore dolor delectus commodi laudantium adipisci, illum amet
-          itaque optio!Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-          eos. Inventore dolor delectus commodi laudantium adipisci, illum amet
-          itaque optio!
+        Welcome to our job website! We are a dedicated team of
+                professionals committed to connecting job seekers with their
+                dream careers. Our website offers a wide variety of job listings
+                across various industries, making it easier for job seekers to
+                find the right opportunity for them.In addition to connecting
+                job seekers with job opportunities, we also offer a variety of
+                resources and tools to help them in their job search. This
+                includes resume building tips, interview preparation advice, and
+                career development resources. We work closely with top employers
+                and recruiters to ensure that our job listings are current and
+                relevant. We also have a team of experts who review and verify
+                all job listings to ensure that they are legitimate and that job
+                seekers are not scammed.
         </p>
 
         <div class="mt-6 sm:text-right">
           <a
-            href="#"
+            href="/jobs"
             class="inline-block rounded-lg bg-gray-800 hover:bg-gray-600 px-5 py-3 text-sm font-medium text-white"
           >
             Get Started
