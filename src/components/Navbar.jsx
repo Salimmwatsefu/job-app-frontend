@@ -61,6 +61,7 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
             </li>
             </NavLink>
 
+
             <NavLink to={"ehome"}>
             <li>
               <a
@@ -86,31 +87,32 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
              </li>
             </NavLink>
             
-            <NavLink href="">
-            <div className="dropdown">
-  <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Account
-  </button>
-  <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a className="dropdown-item" href="/signup">Sign up</a>
-    <a className="dropdown-item" href="/Login">Login</a>
-    <a className="dropdown-item" href="Login">Logout</a>
+  
+
+
+    <div class="md:block">
+      <select>
+        <option value="">Account</option>
+        <option value=""> 
+          <NavLink to="/SignUp">Sign Up</NavLink>
+        </option>
+        <option value="">
+          <NavLink to="/Login" exact component = {Login} setUser =  {setUser} >Log in</NavLink>
+        </option>
+        <option value="">
+          <NavLink to="/Logout" exact component= {Logout} setUser ={setUser} >Log out</NavLink>
+        </option>
+      </select>
+    </div>
+      </ul>
+    </nav>
   </div>
 </div>
-          </NavLink>
-       
-
-          
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
+</div>
 </header>
-
-
-    </div>
-  )
+</div>
+)
 }
 
-export default Navbar
+export default Navbar;
+
