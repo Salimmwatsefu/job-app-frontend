@@ -11,7 +11,7 @@ function Navbar() {
       <div class="md:flex md:items-center md:gap-12 ">
         <a class="block text-gray-600  ml-12 text-xl w-48" href="/">
           <span class="sr-only">Home</span>
-          <img src='https://neojb.brickthemes.com/wp-content/uploads/2018/09/logo.png' className='' />
+          <img src='./Image/image1.jpeg' className='' />
         </a>
       </div>
 

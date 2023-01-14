@@ -1,5 +1,6 @@
 import React from 'react'
-import image from '../components/Image/image1.jpeg'
+// import image from '../components/Image/image1.jpeg'
+
 
 
 const Loading = () => {
@@ -12,7 +13,8 @@ const Loading = () => {
       class="h-5 w-full object-contain sm:h-half"
     />
     <div className='image_container'> 
-    </div>
+        <img src='Image/image1.jpeg' />
+       </div>
           
      </div>
   );
