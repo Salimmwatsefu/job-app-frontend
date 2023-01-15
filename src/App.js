@@ -9,6 +9,7 @@ import SignUp from './components/user/Signup';
 import  Home from "./components/Home";
 import Blog from "./components/Blog";
 import Contact from './components/Contact';
+import Eform from './components/employers/Eform';
 
 
 
@@ -35,6 +36,7 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
       <Route path='/' element={<Home/>}/>
       <Route path='/blog' element={<Blog/>}/>
       <Route path='/contact' element={<Contact/>}/>
+      <Route path='/eform' element={<Eform/>}/>
       </Routes>
 
 
