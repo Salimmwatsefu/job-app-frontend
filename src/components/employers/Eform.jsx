@@ -1,6 +1,39 @@
 import React from "react";
 
-function Eform() {
+const initialState = {
+  title: "",
+  category: "",
+  qualifications: "",
+  deadline: "",
+  description: "",
+};
+
+
+function Eform({onAddJob}) {
+
+  const [formData, setFormData] = useState(initialState)
+  const [title, setTitle] = useState("");
+  const [category, setCategory] = useState("");
+  const [qualifications, setQualifications] = useState("");
+  const [deadline, setDeadline] = useState("");
+  const [description, setDescription] = useState("");
+
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    fetch("/job_listing", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({title, category, qualifications, deadline}),
+    })
+      .then((r) => r.json())
+      .then((newJob) => {
+        setFormData(initialState);
+        onAddJob(newJob);
+      });
+  }
   return (
     <div>
       <section>
@@ -81,11 +114,12 @@ function Eform() {
 
           <div class="py-12 bg-white md:py-24">
             <div class="max-w-lg px-4 mx-auto lg:px-8">
-              <form class="grid grid-cols-6 gap-4">
+              <form class="grid grid-cols-6 gap-4" onSubmit={handleSubmit}>
                 <div class="col-span-3">
                   <label
                     for="FirstName"
                     class="block text-xs font-medium text-gray-700"
+                    
                   >
                     Job title
                   </label>
@@ -94,6 +128,8 @@ function Eform() {
                     type="text"
                     id="FirstName"
                     class="w-full mt-1 border-gray-200 rounded-md shadow-sm sm:text-sm"
+                    value={title}
+                    onChange={(e) => setTitle(e.target.value)}
                   />
                 </div>
 
@@ -104,13 +140,15 @@ function Eform() {
 
                   <div class="mt-1 -space-y-px bg-white rounded-md shadow-sm">
                     <div>
-                      <label for="Country" class="sr-only">
+                      <label for="Country" class="sr-only" >
                         Category
                       </label>
 
                       <select
                         id="Country"
                         class="relative w-full border-gray-200 rounded-t-md focus:z-10 sm:text-sm"
+                        value={category}
+                        onChange={(e) => setCategory(e.target.value)}
                       >
                         <option value="1">Human & Resources</option>
                         <option value="2">Programming</option>
@@ -124,6 +162,7 @@ function Eform() {
                   <label
                     for="Email"
                     class="block text-xs font-medium text-gray-700"
+                    
                   >
                     Qualifications
                   </label>
@@ -132,6 +171,8 @@ function Eform() {
                     type="email"
                     id="Email"
                     class="w-full mt-1 border-gray-200 rounded-md shadow-sm sm:text-sm"
+                    value={qualifications}
+                    onChange={(e) => setQualifications(e.target.value)}
                   />
                 </div>
                 <fieldset class="col-span-6">
@@ -141,13 +182,15 @@ function Eform() {
 
                   <div class="mt-1 -space-y-px bg-white rounded-md shadow-sm">
                     <div>
-                      <label for="Description" class="sr-only"></label>
+                      <label for="Description" class="sr-only" ></label>
 
                       <textarea
                         type="text"
                         id="CardNumber"
                         placeholder="Description"
                         class="relative w-full mt-1 border-gray-200 rounded-t-md focus:z-10 sm:text-sm"
+                        value={description}
+                        onChange={(e) => setDescription(e.target.value)}
                       />
                     </div>
                   </div>
@@ -156,6 +199,8 @@ function Eform() {
                   <label
                     for="FirstName"
                     class="block text-xs font-medium text-gray-700"
+
+
                   >
                     Deadline
                   </label>
@@ -164,6 +209,8 @@ function Eform() {
                     type="text"
                     id="FirstName"
                     class="w-full mt-1 border-gray-200 rounded-md shadow-sm sm:text-sm"
+                    value={deadline}
+                    onChange={(e) => setDeadline(e.target.value)}
                   />
                 </div>
                 <div class="col-span-6">
