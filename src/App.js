@@ -13,7 +13,7 @@ import Blog from "./components/Blog";
 import Contact from './components/Contact';
 import Jobs from './components/Jobs';
 import FileUploader from './components/FileUploader';
-// import JobsCards from './components/JobsCards';
+
 
 
 function App() {
@@ -54,7 +54,7 @@ if (!user) return <Login onLogin={setUser} />;
       <Route path='/upload' element={<FileUploader />}/>
       <Route path="/signup"  element={<SignUp />} />
       <Route path="/Login"  element={<Login />} />
-      <Route path="/signup" exact component= {Logout} setUser ={setUser} />
+      <Route path="/signup" element= {<Logout setUser ={setUser}/>} />
      <Route path='/contact' element={<Contact/>}/>
 
       </Routes>

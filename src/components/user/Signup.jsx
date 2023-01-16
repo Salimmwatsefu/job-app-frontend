@@ -101,7 +101,7 @@ function SignUp({onLogin}) {
           <h1
             class="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl"
           >
-            Welcome to Job Corner
+            Welcome to Career connect
           </h1>
 
           <p class="mt-4 leading-relaxed text-gray-500">
