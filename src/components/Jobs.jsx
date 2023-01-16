@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-//import "tailwindcss/dist/base.css";
 
 function Jobs({ jobs }) {
   const [selectedJob, setSelectedJob] = useState(null);
