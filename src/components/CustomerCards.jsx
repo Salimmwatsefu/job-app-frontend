@@ -5,7 +5,7 @@ function CustomerCards() {
     <div>
         <div>
             <h1 className='flex justify-center font-semibold mt-20 text-3xl'>Our Customers</h1>
-            <p className='justify-center flex mt-5 text-gray-500'>Suspendisse consectetur accumsan purus, id imperdiet purus imperdiet eget.</p>
+            <p className='justify-center flex mt-5 text-gray-500'>Our customers are consistently impressed with our service and have formed loyal relationships with us</p>
         </div>
         <div className='flex gap-16 justify-center items-center mt-14 mb-28'>
             <img src='https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg/sap-logo-svg.svg'

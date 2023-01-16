@@ -18,7 +18,6 @@ function Navbar() {
       }
     });
   }, []);
-
 if (!user) return <SignUp onLogin={setUser} />;*/}
 
   return (
@@ -30,7 +29,7 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
         <a class="block text-gray-600  ml-12 text-xl w-48" href="/">
           <span class="sr-only">Home</span>
 
-          <img src='./Image/image1.jpeg' className='' />
+          <img src='./Image/image1.jpeg'style={{ width: '60%', height: 'auto'}} className='' />
 
           {/* <img src='https://neojb.brickthemes.com/wp-content/uploads/2018/09/logo.png' alt="" className='' /> */}
 
@@ -88,6 +87,7 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
              </li>
             </NavLink>
             
+
      
     <Dropdown>
       <Dropdown.Toggle variant="success" id="dropdown-basic">
@@ -100,6 +100,22 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
         <Dropdown.Item href="/">Logout</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
+
+<div class="md:block">
+      <select>
+        <option value="">Account</option>
+        <option value=""> 
+          <NavLink to="/SignUp">Sign Up</NavLink>
+        </option>
+        <option value="">
+          <NavLink to="/Login">Log in</NavLink>
+        </option>
+        <option value="">
+          <NavLink to="/Logout">Log out</NavLink>
+        </option>
+      </select>
+    </div>
+
       </ul>
     </nav>
   </div>
