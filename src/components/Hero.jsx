@@ -56,8 +56,7 @@ function Hero() {
       </h1>
 
       <p class="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo
-        tenetur fuga ducimus numquam ea!
+      Empowering job seekers to connect, discover and explore opportunities to advance their careers and achieve success
       </p>
 
       <div class="mt-8 flex flex-wrap gap-4 text-center">

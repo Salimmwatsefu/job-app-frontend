@@ -17,7 +17,6 @@ function Navbar() {
       }
     });
   }, []);
-
 if (!user) return <SignUp onLogin={setUser} />;*/}
 
   return (
@@ -29,7 +28,7 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
         <a class="block text-gray-600  ml-12 text-xl w-48" href="/">
           <span class="sr-only">Home</span>
 
-          <img src='./Image/image1.jpeg' className='' />
+          <img src='./Image/image1.jpeg'style={{ width: '60%', height: 'auto'}} className='' />
 
           {/* <img src='https://neojb.brickthemes.com/wp-content/uploads/2018/09/logo.png' alt="" className='' /> */}
 
@@ -87,10 +86,7 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
              </li>
             </NavLink>
             
-  
-
-
-    <div class="md:block">
+<div class="md:block">
       <select>
         <option value="">Account</option>
         <option value=""> 
