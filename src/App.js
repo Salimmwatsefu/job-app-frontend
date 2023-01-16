@@ -16,7 +16,7 @@ import Contact from './components/Contact';
 import Eform from './components/employers/Eform';
 import Jobs from './components/Jobs';
 import FileUploader from './components/FileUploader';
-// import JobsCards from './components/JobsCards';
+
 
 
 
@@ -62,8 +62,7 @@ function App() {
       <Route path='/upload' element={<FileUploader />}/>
       <Route path="/signup"  element={<SignUp />} />
       <Route path="/Login"  element={<Login />} />
-      <Route path="/signup" exact component= {Logout} setUser ={setUser} />
-     
+
 
       </Routes>
 </div>
