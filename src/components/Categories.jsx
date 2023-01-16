@@ -1,5 +1,5 @@
 import React, {useEffect,useState} from 'react'
-import { SiAntdesign } from "react-icons/si";
+import { SiAirplayvideo } from "react-icons/si";
 
 function Categories() {
   const [categoriess,setCategoriess ] =useState ([]);
@@ -27,17 +27,15 @@ function Categories() {
   class="relative block rounded-xl border border-gray-100 p-8 shadow-xl w-64 h-48 bg-white"
   href=""
 >
-<div className='h-28 flex justify-center '><SiAntdesign className='h-20 w-20 text-gray-600'/></div>
+<div className='h-28 flex justify-center '><SiAirplayvideo className='h-20 w-20 text-gray-600'/></div>
 
   <div className=" text-gray-500 sm:pr-8 flex justify-center" key={categories.id}>
     
     
-    <h3 class=" text-lg font-semibold text-black flex ml-6">{categories.name}</h3>
+    <h3 className=" text-lg font-semibold text-black flex ml-6">{categories.name}</h3>
 
   </div>
 </a>
-
-
 ))}
 
 

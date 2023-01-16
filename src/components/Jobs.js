@@ -22,7 +22,7 @@ function Jobs({jobs}) {
         {jobs.map((job)=>
         <div className="card mt-10" key={job.id}>
         <div className="card-header"><a href="#display" style={{fontWeight: "bold"}}>
-          {job.job_title}</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="#" className="btn btn-primary">Apply</a>
+          {job.job_title}</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="/upload" className="btn btn-primary">Apply</a>
         </div>
         <ul className="list-group list-group-flush">
           <li className="list-group-item" style={{fontWeight: "bold"}}>Deadline: {job.deadline}</li>

@@ -8,10 +8,10 @@ function Contact() {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_4eccdlo",
-        "template_qu7kqjb",
+        "service_uog23se",
+        "template_j10za1a",
         form.current,
-        "c8r-RwFIoo4QbIu56"
+        "u_o34Ox9L0zLMJiLp"
       )
       .then(
         (result) => {
@@ -23,6 +23,7 @@ function Contact() {
       );
   }
   return (
+    <div>
     <div className="w-full flex items-center justify-center my-8">
       <form ref={form} onSubmit={sendEmail}>
         <div className=" bg-white shadow rounded py-2 lg:px-28 px-8">
@@ -101,6 +102,7 @@ function Contact() {
           </div>
         </div>
       </form>
+    </div>
     </div>
   );
 }

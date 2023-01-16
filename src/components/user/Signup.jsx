@@ -10,9 +10,7 @@ function SignUp({onLogin}) {
     const [passwordConfirmation, setPasswordConfirmation] = useState("");
     const [errors, setErrors] = useState([]);
 
-
-
-    function handleSubmit(e) {
+      function handleSubmit(e) {
         e.preventDefault();
         fetch("/signup", {
         method: "POST",
