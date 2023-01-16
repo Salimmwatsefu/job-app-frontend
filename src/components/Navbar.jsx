@@ -1,28 +1,35 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-
+import Dropdown from 'react-bootstrap/Dropdown';
 
 function Navbar() {
-  
+
+
 
   return (
     <div>
-     <header aria-label="Site Header" className="bg-white h-16  ">
-  <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 ">
-    <div className="flex h-16 items-center justify-between ">
-      <div className="md:flex md:items-center md:gap-12 ">
-        <a className="block text-gray-600  ml-12 text-xl w-48" href="/">
-          <span className="sr-only">Home</span>
+     <header aria-label="Site Header" class="bg-white h-16  ">
+  <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 ">
+    <div class="flex h-16 items-center justify-between ">
+      <div class="md:flex md:items-center md:gap-12 ">
+        <a class="block text-gray-600  ml-12 text-xl w-48" href="/">
+          <span class="sr-only">Home</span>
 
-          <img src='./Image/image4.png' className='' style={{width:"140px", height:""}}/>
+
+          <img src='./Image/image2.png' className='' style={{width:"140px"}}/>
+
+        
+          
+
         </a>
       </div>
 
-      <div className="hidden md:block text-gray-600">
-        <nav aria-label="Site Nav" >
-          <ul className="flex items-center gap-14 text-sm font-medium pr-16 ">
+      <div className="hidden md:block">
+        <nav aria-label="Site Nav">
+          <ul className="flex items-center gap-14 text-sm font-medium pr-16">
             <NavLink to="/">
-            <li className="text-black transition hover:text-gray-500/75">Home
+            <li className="text-black transition hover:text-gray-500/75">
+                Home
             </li>
             </NavLink>
 
@@ -39,7 +46,9 @@ function Navbar() {
 
 
             <NavLink to={"ehome"}>
-            <li className="text-black transition hover:text-gray-500/75">For Employers
+            <li className="text-black transition hover:text-gray-500/75" >
+                For Employers
+             
             </li>
             </NavLink>
 
@@ -58,20 +67,21 @@ function Navbar() {
              </li>
             </NavLink>
             
-      <div className="md:block">
-      <select>
-        <option value="">Account</option>
-        <option value=""> 
-          <NavLink to="/signUp">Sign Up</NavLink>
-        </option>
-        <option value="">
-          <NavLink to="/Login">Log in</NavLink>
-        </option>
-        <option value="">
-          <NavLink to="/signup">Log out</NavLink>
-        </option>
-      </select>
-    </div>
+
+     
+    <Dropdown>
+      <Dropdown.Toggle variant="success" id="dropdown-basic">
+        Account
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        <Dropdown.Item href="/signup">Signup</Dropdown.Item>
+        <Dropdown.Item href="/Login">Login</Dropdown.Item>
+        <Dropdown.Item href="/">Logout</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+
+
       </ul>
     </nav>
   </div>
@@ -83,4 +93,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
