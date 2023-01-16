@@ -101,20 +101,6 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
       </Dropdown.Menu>
     </Dropdown>
 
-<div class="md:block">
-      <select>
-        <option value="">Account</option>
-        <option value=""> 
-          <NavLink to="/SignUp">Sign Up</NavLink>
-        </option>
-        <option value="">
-          <NavLink to="/Login">Log in</NavLink>
-        </option>
-        <option value="">
-          <NavLink to="/Logout">Log out</NavLink>
-        </option>
-      </select>
-    </div>
 
       </ul>
     </nav>
