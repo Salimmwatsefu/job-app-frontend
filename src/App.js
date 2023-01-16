@@ -13,6 +13,7 @@ import Ehome from './components/employers/Ehome';
 import  Home from "./components/Home";
 import Blog from "./components/Blog";
 import Contact from './components/Contact';
+import Eform from './components/employers/Eform';
 import Jobs from './components/Jobs';
 // import JobsCards from './components/JobsCards';
 
@@ -50,6 +51,11 @@ if (!user) return <Login onLogin={setUser} />;
       <Route path='/' element={<Home/>}/>
       <Route path='/loading' element={<Loading/>}/>
       <Route path='/blog' element={<Blog/>}/>
+
+      <Route path='/contact' element={<Contact/>}/>
+      <Route path='/eform' element={<Eform/>}/>
+     
+
       <Route path='/jobs' element={<Jobs jobs={jobs}/>}/>
       <Route path='/ehome' element={<Ehome/>}/>
       {/* <Route path='/account/*' element={<Account/>}/> */}
@@ -57,6 +63,7 @@ if (!user) return <Login onLogin={setUser} />;
       <Route path="/Login" exact component = {Login} setUser =  {setUser} ></Route>
       <Route path="/logout" exact component= {Logout} setUser ={setUser} ></Route>
      <Route path='/contact' element={<Contact/>}/>
+
 
       </Routes>
 </div>
