@@ -37,22 +37,22 @@ function SignUp({onLogin}) {
   return (
     
 
-<section class="bg-white">
-  <div class="lg:grid lg:min-h-screen lg:grid-cols-12">
+<div id="signup" className="bg-white">
+  <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
     <section
-      class="relative flex h-32 items-end bg-blue-500 lg:col-span-5 lg:h-full xl:col-span-6"
+      className="relative flex h-32 items-end bg-blue-500 lg:col-span-5 lg:h-full xl:col-span-6"
     >
       <img
         alt="Night"
         src="https://images.unsplash.com/photo-1518709911915-712d5fd04677?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNpZ24lMjBpbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-        class="absolute inset-0 h-full w-full object-contain opacity-80"
+        className="absolute inset-0 h-full w-full object-contain opacity-80"
       />
 
-      <div class="hidden lg:relative lg:block lg:p-12">
-        <a class="block text-white" href="/">
-          <span class="sr-only">Home</span>
+      <div className="hidden lg:relative lg:block lg:p-12">
+        <a className="block text-white" href="/">
+          <span className="sr-only">Home</span>
           <svg
-            class="h-8 sm:h-10"
+            className="h-8 sm:h-10"
             viewBox="0 0 28 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@ function SignUp({onLogin}) {
         </a>
 
         <h2 class="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
-          Welcome to Job Corner
+          Welcome to Career Connect
         </h2>
 
         <p class="mt-4 leading-relaxed text-white/90">
@@ -101,7 +101,7 @@ function SignUp({onLogin}) {
           <h1
             class="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl"
           >
-            Welcome to Squid 🦑
+            Welcome to Job Corner
           </h1>
 
           <p class="mt-4 leading-relaxed text-gray-500">
@@ -205,7 +205,7 @@ function SignUp({onLogin}) {
 
             <p class="mt-4 text-sm text-gray-500 sm:mt-0">
               Already have an account?
-              <a href="#" class="text-gray-700 underline">Log in</a>.
+              <a href="/Login" class="text-gray-700 underline">Log in</a>.
             </p>
 
         
@@ -215,7 +215,7 @@ function SignUp({onLogin}) {
       </div>
     </main>
   </div>
-</section>
+</div>
 
   )
 }

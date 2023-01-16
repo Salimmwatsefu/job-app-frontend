@@ -2,9 +2,9 @@ import React from 'react'
 
 function About() {
   return (
-    <div>
-      <div class="">
-  <div class=" bg-gray-100 p-6 shadow-sm">
+    <div id="about">
+      <div className="">
+  <div class=" bg-gray-50 p-6 shadow-sm">
     <button
       type="button"
       class="absolute -top-1 -right-1 rounded-full border border-gray-200 bg-white p-1 text-gray-400"
@@ -24,7 +24,7 @@ function About() {
       </svg>
     </button>
 
-    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 mt-20">
       <img
         alt="Laptop"
         src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
@@ -55,7 +55,7 @@ function About() {
 
         <div class="mt-6 sm:text-right">
           <a
-            href="#"
+            href="/jobs"
             class="inline-block rounded-lg bg-gray-800 hover:bg-gray-600 px-5 py-3 text-sm font-medium text-white"
           >
             Get Started

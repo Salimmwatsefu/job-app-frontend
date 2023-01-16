@@ -7,7 +7,7 @@ function Footer() {
   <div class="mx-auto max-w-screen-xl px-4 pt-16 pb-6 sm:px-6 lg:px-8 lg:pt-24">
     <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
       <div>
-        <h1 className='text-lg text-white'>Neo JB</h1>
+        <h1 className='text-lg text-white'>Career Connect</h1>
         <p
           class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-400 sm:mx-0 sm:max-w-xs sm:text-left"
         >
@@ -18,9 +18,9 @@ function Footer() {
         <ul class="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
           <li>
             <a
-              href="/"
+              href="https://www.facebook.com/profile.php?id=100089460190476"
               rel="noreferrer"
-              target="_blank"
+              target="https://www.facebook.com/profile.php?id=100089460190476"
               class="text-teal-700 transition hover:text-teal-700/75"
             >
               <span class="sr-only">Facebook</span>
@@ -41,9 +41,9 @@ function Footer() {
 
           <li>
             <a
-              href="/"
+              href="https://www.instagram.com/career_connect254/"
               rel="noreferrer"
-              target="_blank"
+              target="https://www.instagram.com/career_connect254/"
               class="text-teal-700 transition hover:text-teal-700/75"
             >
               <span class="sr-only">Instagram</span>
@@ -64,9 +64,9 @@ function Footer() {
 
           <li>
             <a
-              href="/"
+              href="https://twitter.com/CareerConnect13"
               rel="noreferrer"
-              target="_blank"
+              target="https://twitter.com/CareerConnect13"
               class="text-teal-700 transition hover:text-teal-700/75"
             >
               <span class="sr-only">Twitter</span>
@@ -85,9 +85,9 @@ function Footer() {
 
           <li>
             <a
-              href="/"
+              href="https://github.com/Salimmwatsefu/job-app-frontend"
               rel="noreferrer"
-              target="_blank"
+              target="https://github.com/Salimmwatsefu/job-app-frontend"
               class="text-teal-700 transition hover:text-teal-700/75"
             >
               <span class="sr-only">GitHub</span>
