@@ -1,8 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 function Navbar() {
-  
+
+
 
   return (
     <div>
@@ -13,8 +15,11 @@ function Navbar() {
         <a class="block text-gray-600  ml-12 text-xl w-48" href="/">
           <span class="sr-only">Home</span>
 
+
           <img src='./Image/image2.png' className='' style={{width:"140px"}}/>
 
+        
+          
 
         </a>
       </div>
@@ -39,6 +44,7 @@ function Navbar() {
             </li>
             </NavLink>
 
+
             <NavLink to={"ehome"}>
             <li className="text-black transition hover:text-gray-500/75" >
                 For Employers
@@ -61,31 +67,30 @@ function Navbar() {
              </li>
             </NavLink>
             
-            <NavLink href="">
-            <div className="dropdown">
-  <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Account
-  </button>
-  <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a className="dropdown-item" href="/signup">Sign up</a>
-    <a className="dropdown-item" href="/Login">Login</a>
-    <a className="dropdown-item" href="Login">Logout</a>
+
+     
+    <Dropdown>
+      <Dropdown.Toggle variant="success" id="dropdown-basic">
+        Account
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        <Dropdown.Item href="/signup">Signup</Dropdown.Item>
+        <Dropdown.Item href="/Login">Login</Dropdown.Item>
+        <Dropdown.Item href="/">Logout</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+
+
+      </ul>
+    </nav>
   </div>
 </div>
-          </NavLink>
-       
-
-          
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
+</div>
 </header>
-
-
-    </div>
-  )
+</div>
+)
 }
 
-export default Navbar
+export default Navbar;
+

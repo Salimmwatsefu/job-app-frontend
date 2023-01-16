@@ -7,7 +7,7 @@ function Footer() {
   <div class="mx-auto max-w-screen-xl px-4 pt-16 pb-6 sm:px-6 lg:px-8 lg:pt-24">
     <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
       <div>
-        <h1 className='text-lg text-white'>Neo JB</h1>
+        <h1 className='text-lg text-white'>Career Connect</h1>
         <p
           class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-400 sm:mx-0 sm:max-w-xs sm:text-left"
         >
@@ -383,3 +383,4 @@ function Footer() {
 }
 
 export default Footer
+
