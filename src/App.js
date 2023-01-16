@@ -1,21 +1,22 @@
 import React, {useState, useEffect} from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
-// import SignUp from './components/user/Signup';
-// import Login from './components/user/Login';
-// import Logout from './components/user/Logout';
 import Loading from './components/Loading';
-import Review from './components/Review';
+import { Routes, Route } from 'react-router-dom';
+import SignUp from './components/user/Signup';
+import Login from './components/user/Login';
+import Logout from './components/user/Logout';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Review from './components/Review';
 import Ehome from './components/employers/Ehome';
-//import Account from './components/Account';
 import  Home from "./components/Home";
 import Blog from "./components/Blog";
 import Contact from './components/Contact';
 import Eform from './components/employers/Eform';
 import Jobs from './components/Jobs';
-// import JobsCards from './components/JobsCards';
+import FileUploader from './components/FileUploader';
+
 
 
 
@@ -58,11 +59,9 @@ function App() {
 
       <Route path='/jobs' element={<Jobs jobs={jobs}/>}/>
       <Route path='/ehome' element={<Ehome/>}/>
-      {/* <Route path='/account/*' element={<Account/>}/> */}
-      {/* <Route path="/signup" exact component = {SignUp} setUser = {setUser} ></Route>
-      <Route path="/Login" exact component = {Login} setUser =  {setUser} ></Route>
-      <Route path="/logout" exact component= {Logout} setUser ={setUser} ></Route> */}
-     <Route path='/contact' element={<Contact/>}/>
+      <Route path='/upload' element={<FileUploader />}/>
+      <Route path="/signup"  element={<SignUp />} />
+      <Route path="/Login"  element={<Login />} />
 
 
       </Routes>
