@@ -2,16 +2,6 @@ import React from 'react';
 
 const FeaturedJobsCard = (props) => {
   return (
-    <div id="jobs" className='card'>
-      <br/>
-      <div className='card-item'>
-       <h2>Featured Jobs</h2></div>
-       <br/>
-      <div style={{ display: 'flex', flexDirection: 'row' }}>
-        <div style={{ marginRight: '16px' }} className='card-item'></div>
-        <div style={{ marginRight: '16px' }} className='card-item'></div>
-        <div className='card-item'></div>
-        
     <div>
       <h2 style={{ position: 'absolute', top: '0', Right: '0' }}>{props.name}</h2>
       <div style={{ display: 'flex', flexDirection: 'row' }}>

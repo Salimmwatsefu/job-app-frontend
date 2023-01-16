@@ -17,7 +17,6 @@ function Navbar() {
       }
     });
   }, []);
-
 if (!user) return <SignUp onLogin={setUser} />;*/}
 
   return (
@@ -31,7 +30,7 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
 
           <img src='./Image/image1.jpeg' className='' />
 
-          <img src='https://neojb.brickthemes.com/wp-content/uploads/2018/09/logo.png' alt="" className='' />
+          {/* <img src='https://neojb.brickthemes.com/wp-content/uploads/2018/09/logo.png' alt="" className='' /> */}
 
 
         </a>
@@ -97,10 +96,10 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
           <NavLink to="/SignUp">Sign Up</NavLink>
         </option>
         <option value="">
-          <NavLink to="/Login" exact component = {Login} setUser =  {setUser} >Log in</NavLink>
+          <NavLink to="/Login">Log in</NavLink>
         </option>
         <option value="">
-          <NavLink to="/Logout" exact component= {Logout} setUser ={setUser} >Log out</NavLink>
+          <NavLink to="/Logout">Log out</NavLink>
         </option>
       </select>
     </div>
