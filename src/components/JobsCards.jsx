@@ -40,8 +40,39 @@ const JobsCards = (props) => {
         <div style={{ display: 'flex', flexDirection: 'row' }}>
             <JobGroup label="Featured Jobs" jobs={featuredJobs} />
             <JobGroup label="Recent Jobs" jobs={recentJobs} />
+
+        <div style={{ border: '2px solid #ccc', padding: '32px', margin: '16px' }}>
+          <RecentJobsCard
+          name="Recent Jobs"
+          title="Data Scientist"
+          location="Nakuru, Kenya"
+          employmentType="Part-time"
+        />
+        <RecentJobsCard
+          name="Recent Jobs"
+          title="Data Analyst"
+          location="Nakuru, Kenya"
+          employmentType="Part-time"
+        />
+        <RecentJobsCard
+          name="Recent Jobs"
+          title="Business Analyst"
+          location="Nakuru, Kenya"
+          employmentType="Part-time"
+          />
+          <RecentJobsCard
+            name="Recent Jobs"
+            title="Project Manager"
+            location="Nakuru, Kenya"
+            employmentType="Part-time"
+          />
+
         </div>
     );
+
 }
 
-export default JobsCards;
+
+  
+  export default JobsCards;
+
