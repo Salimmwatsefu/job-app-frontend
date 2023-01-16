@@ -1,24 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 
-import { useState, useEffect } from 'react';
-// import SignUp from '../components/user/Signup';
-// import Login from '../components/user/Login';
-// import Logout from '../components/user/Logout';
-
-
 function Navbar() {
-  const [user, setUser] = useState(null);
- {/* useEffect(() => {
-    //auto-login
-    fetch("/me").then((r) => {
-      if (r.ok) {
-        r.json().then((user) => setUser(user));
-      }
-    });
-  }, []);
-
-if (!user) return <SignUp onLogin={setUser} />;*/}
+  
 
   return (
     <div>
@@ -29,9 +13,7 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
         <a class="block text-gray-600  ml-12 text-xl w-48" href="/">
           <span class="sr-only">Home</span>
 
-          <img src='./Image/image1.jpeg' className='' />
-
-          <img src='https://neojb.brickthemes.com/wp-content/uploads/2018/09/logo.png' alt="" className='' />
+          <img src='./Image/image2.png' className='' style={{width:"140px"}}/>
 
 
         </a>
@@ -41,12 +23,8 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
         <nav aria-label="Site Nav">
           <ul className="flex items-center gap-14 text-sm font-medium pr-16">
             <NavLink to="/">
-            <li>
-              <a
-                className="text-black transition hover:text-gray-500/75"
-              >
+            <li className="text-black transition hover:text-gray-500/75">
                 Home
-              </a>-
             </li>
             </NavLink>
 
@@ -62,12 +40,9 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
             </NavLink>
 
             <NavLink to={"ehome"}>
-            <li>
-              <a
-                className="text-black transition hover:text-gray-500/75"
-              >
+            <li className="text-black transition hover:text-gray-500/75" >
                 For Employers
-              </a>
+             
             </li>
             </NavLink>
 
