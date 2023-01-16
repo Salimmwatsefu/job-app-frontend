@@ -3,6 +3,15 @@ import React, { useState } from "react";
 
 function Jobs({ jobs }) {
   const [selectedJob, setSelectedJob] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearch = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const filteredJobs = jobs.filter((job) => {
+    return job.job_title.toLowerCase().includes(searchTerm.toLowerCase());
+  });
 
   return (
     <div className="bg-gray-50 flex">
@@ -17,11 +26,13 @@ function Jobs({ jobs }) {
               type="text"
               id="job-search"
               placeholder="Search for jobs"
+              value={searchTerm}
+              onChange={handleSearch}
             />
           </div>
         </form>
         <div className="mx-auto max-w-screen-xl">
-            {jobs.map((job) => (
+            {filteredJobs.map((job) => (
             <div className="mb-4" key={job.id}>
                 <div className="bg-white rounded-lg shadow-md p-6">
                 <div className="flex justify-between">
@@ -57,5 +68,6 @@ function Jobs({ jobs }) {
     </div>
   );
 }
-
 export default Jobs;
+
+
