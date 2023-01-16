@@ -85,11 +85,7 @@ if (!user) return <SignUp onLogin={setUser} />;*/}
               Contacts
              </li>
             </NavLink>
-            
-  
-
-
-    <div class="md:block">
+      <div class="md:block">
       <select>
         <option value="">Account</option>
         <option value=""> 
