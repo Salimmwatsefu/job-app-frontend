@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function About() {
   return (
@@ -54,12 +55,12 @@ function About() {
         </p>
 
         <div class="mt-6 sm:text-right">
-          <a
-            href="/jobs"
+          <Link
+            to="/signup"
             class="inline-block rounded-lg bg-gray-800 hover:bg-gray-600 px-5 py-3 text-sm font-medium text-white"
           >
             Get Started
-          </a>
+          </Link>
         </div>
       </div>
     </div>

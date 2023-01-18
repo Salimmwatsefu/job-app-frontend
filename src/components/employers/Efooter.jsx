@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Efooter() {
   return (
@@ -18,27 +19,11 @@ function Efooter() {
       </h2>
 
       <div class="mt-8 flex flex-wrap justify-center gap-10">
-       
 
-      <a
+
+<Link
   class="group relative inline-block overflow-hidden border border-yellow-600 px-8 py-3 focus:outline-none focus:ring rounded-3xl"
-  href=""
->
-  <span
-    class="absolute inset-y-0 left-0 w-[2px] bg-amber-600 transition-all group-hover:w-full group-active:bg-amber-600"
-  ></span>
-
-  <span
-    class="relative text-sm font-bold text- transition-colors group-hover:text-white uppercase"
-  >
-    Get Started
-  </span>
-</a>
-
-
-<a
-  class="group relative inline-block overflow-hidden border border-yellow-600 px-8 py-3 focus:outline-none focus:ring rounded-3xl"
-  href=""
+  to="/contact"
 >
   <span
     class="absolute inset-y-0 right-0 w-[2px] bg-amber-600 transition-all group-hover:w-full group-active:bg-amber-600"
@@ -49,7 +34,7 @@ function Efooter() {
   >
     Speak to us
   </span>
-</a>
+</Link>
 
       </div>
     </div>

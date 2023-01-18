@@ -11,6 +11,9 @@ function FileUploader() {
   };
 
   const form = useRef();
+//   const nameRef = useRef(null);
+//   const emailRef = useRef(null);
+//   const uploadRef = useRef(null);
 
 const addFile = () => {
    inputFile.current.click();
@@ -18,6 +21,9 @@ const addFile = () => {
 
  const sendEmail = (e) => {
    e.preventDefault();
+//    nameRef.current.value = '';
+//    emailRef.current.value = '';
+//   uploadRef.current.value = '';
 
    emailjs.sendForm("service_uog23se",  "template_j10za1a", form.current, "u_o34Ox9L0zLMJiLp")
      .then((result) => {
@@ -39,10 +45,14 @@ return (
   <br/>
   <p>We are glad to forward your CV to the associated employer by simply uploading it below. Please attach your file in PDF.</p>
  <br/>
- <br/>
-  <p className="lead">
-  <form ref={form} enctype="multipart/form-data">
-    <input type="file" onChange={addFile} />
+ <h4>Fill this Application form</h4>
+  <p className="lead"> 
+  <form ref={form} enctype="multipart/form-data" style={{borderRadius: '1em'}}>
+  <input type="text" name="name" placeholder="Name"/>
+       <br/>     
+    <input  type="text" name="email" placeholder="Email"/>
+    <br/>    
+    <input  type="file" name="message" onChange={addFile} style={{backgroundColor:"#fce4d8"}}/>
 
     <div>{file && `${file.name} - ${file.type}`}</div>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function Logout({setUser}) {
   const handleLogout = () => {
     // Send a request to the logout route
@@ -7,8 +8,6 @@ function Logout({setUser}) {
       .then(response => {
         if (response.ok) {
           setUser(null)
-          // If the logout was successful, redirect the user to the login page
-          window.location.href = '/login';
         }
       });
   };

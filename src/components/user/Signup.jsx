@@ -1,7 +1,5 @@
 import { useState } from 'react';
 
-
-
 function SignUp({onLogin}) {
 
     const [username, setUsername] = useState("");
@@ -207,7 +205,7 @@ function SignUp({onLogin}) {
             </p>
 
         
-          </div>
+          </div> 
           
         </form>
       </div>

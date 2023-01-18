@@ -1,6 +1,8 @@
 import React from "react";
 
+
 function Blog() {
+ 
   return (
     <div class="bg-slate-50">
       <h2 className="font-semibold flex justify-center mb-4">Latest News</h2>
@@ -8,7 +10,7 @@ function Blog() {
         Keep everything update, from entrepreneur from all around the world.
       </p>
       <div className="flex gap-10 justify-center pb-10 ">
-        <div className="w-60 bg-white">
+        <div className="w-60 bg-white" >
           <img
             src="https://neojb.brickthemes.com/wp-content/uploads/2018/08/happy-colleagues-in-office-using-computer-1024x683.jpg"
             alt=""

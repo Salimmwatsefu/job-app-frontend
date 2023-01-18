@@ -28,8 +28,7 @@ const JobsCards = (props) => {
         { name: "Featured Jobs", title: "Software Engineer", location: "Nairobi, Kenya", employmentType: "Full-time" },
         { name: "Featured Jobs", title: "DevOps Engineer", location: "Nairobi, Kenya", employmentType: "Full-time" },
         { name: "Featured Jobs", title: "Front-end Developer", location: "Nairobi, Kenya", employmentType: "Full-time" },
-        { name: "Featured Jobs", title: "Back-end Developer", location: "Nairobi, Kenya", employmentType: "Full-time" },
-        { name: "Featured Jobs", title: "QA Engineer", location: "Nairobi, Kenya", employmentType: "Full-time" },
+        { name: "Featured Jobs", title: "Back-end Developer", location: "Nairobi, Kenya", employmentType: "Full-time" }
     ];
     
     const recentJobs = [
@@ -39,12 +38,12 @@ const JobsCards = (props) => {
         { name: "Recent Jobs", title: "Project Manager", location: "Nakuru, Kenya", employmentType: "Part-time" },
     ];
     return (
-        <div style={{ display: 'flex', flexDirection: 'row' }}>
-            <JobGroup label="Featured Jobs" jobs={featuredJobs} />
+      <div >
+        <div className="mx-auto" style={{ display: 'flex', flexDirection: 'row', width:"100vh"}} align="center" >
+            <JobGroup label="Featured Jobs"  jobs={featuredJobs} />
             <JobGroup label="Recent Jobs" jobs={recentJobs} />
-
-        
         </div>
+      </div>
     );
 
 }
