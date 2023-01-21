@@ -41,7 +41,7 @@ function App() {
     });
   }, []);
 
-if (!user) return <Login onLogin={setUser} />;
+if (!user) return <SignUp onLogin={setUser} />;
 
   return (
     <div className="App">
@@ -55,8 +55,8 @@ if (!user) return <Login onLogin={setUser} />;
       <Route path='/jobs' element={<Jobs jobs={jobs}/>}/>
       <Route path='/upload' element={<FileUploader  />}/>
       <Route path='/ehome' element={<Ehome/>}/>
-      <Route path="/signup" element={<SignUp onLogin={setUser}/>}/>
-      <Route path="/Login" element={<Login/>}/>
+      <Route path="/signup" element={<SignUp />}/>
+      <Route path="/Login" element={<Login onLogin={setUser}/>}/>
       <Route path="/logout" element={<Logout setUser ={setUser} />} />
      <Route path='/contact' element={<Contact/>}/>
       <Route path='/upload' element={<FileUploader />}/>
