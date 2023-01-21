@@ -52,7 +52,7 @@ function Eform({jobs, setJobs}) {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("/job_listings", configObj)
+    fetch("https://careerconnect-production.up.railway.app/job_listings", configObj)
       .then((r) => r.json())
       .then((r) => {
         setJobs([...jobs, r])

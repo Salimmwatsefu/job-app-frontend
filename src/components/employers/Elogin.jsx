@@ -11,7 +11,7 @@ function handleSubmit(e) {
   e.preventDefault();
   setErrors([]);
   setIsLoading(true);
-  fetch("/employers", {
+  fetch("https://careerconnect-production.up.railway.app/employers", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

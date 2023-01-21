@@ -10,7 +10,7 @@ function SignUp({onLogin}) {
 
       function handleSubmit(e) {
         e.preventDefault();
-        fetch("/signup", {
+        fetch("https://careerconnect-production.up.railway.app/signup", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

@@ -10,7 +10,7 @@ function handleSubmit(e) {
   e.preventDefault();
   setErrors([]);
   setIsLoading(true);
-  fetch("/login", {
+  fetch("https://careerconnect-production.up.railway.app/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -9,7 +9,7 @@ function EsignUp() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("/employers", {
+    fetch("https://careerconnect-production.up.railway.app/employers", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
