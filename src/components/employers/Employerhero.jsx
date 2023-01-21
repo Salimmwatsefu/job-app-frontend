@@ -21,12 +21,21 @@ function Employerhero() {
 
       <div class="mt-8 flex flex-wrap justify-center gap-4">
         <h3>Are you an Employer? </h3>
-        <a
+        <Link
           class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
-          href="/contact"
+          to="/esignup"
         >
-          SPEAK TO US
-        </a>
+          Register
+        </Link>
+      </div>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <h3>Already sign up? </h3>
+        <Link
+          class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+          to="/elogin"
+        >
+          Login
+        </Link>
       </div>
     </div>
   </div>

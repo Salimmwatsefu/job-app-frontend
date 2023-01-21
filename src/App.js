@@ -14,6 +14,8 @@ import Contact from './components/Contact';
 import Eform from './components/employers/Eform';
 import Jobs from './components/Jobs';
 import FileUploader from './components/FileUploader';
+import EsignUp from './components/employers/EsignUp';
+import Elogin from './components/employers/Elogin';
 
 
 
@@ -39,7 +41,7 @@ function App() {
     });
   }, []);
 
-if (!user) return <Login onLogin={setUser} />;
+// if (!user) return <Login onLogin={setUser} />;
 
   return (
     <div className="App">
@@ -58,6 +60,8 @@ if (!user) return <Login onLogin={setUser} />;
       <Route path="/logout" element={<Logout setUser ={setUser} />} />
      <Route path='/contact' element={<Contact/>}/>
       <Route path='/upload' element={<FileUploader />}/>
+      <Route path='/esignup' element={<EsignUp />}/>
+      <Route path='/elogin' element={<Elogin />}/>
 
       </Routes>
 </div>

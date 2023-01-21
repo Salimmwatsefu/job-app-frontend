@@ -71,8 +71,6 @@ function Eform({jobs, setJobs}) {
 
                 <h2 class="ml-4 font-medium text-gray-900">Job posting form</h2>
               </div>
-
-           
           </div>
           </div>
 
