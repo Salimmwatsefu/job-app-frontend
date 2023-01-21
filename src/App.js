@@ -27,7 +27,7 @@ function App() {
 
 
   useEffect(() => {
-    fetch("/job_listings")
+    fetch("https://careerconnect-production.up.railway.app/job_listings")
     .then((res)=>res.json())
     .then((jobs)=> setJobs(jobs))
   }, [])
