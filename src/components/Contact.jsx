@@ -1,9 +1,10 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import { useRef } from "react";
+import { useRef,useState } from "react";
 
 function Contact() {
   const form = useRef();
+  const [message, setmessage] = useState();
   function sendEmail(e) {
     e.preventDefault();
     emailjs
@@ -15,6 +16,7 @@ function Contact() {
       )
       .then(
         (result) => {
+          setmessage("Message sent succesfull!");
           console.log(result.text);
         },
         (error) => {
@@ -100,6 +102,7 @@ function Contact() {
               Send message
             </button>
           </div>
+          <div className="message text-sm text-green-500 col-span-6">{message ? <p>{message}</p> : null}</div>
         </div>
       </form>
     </div>

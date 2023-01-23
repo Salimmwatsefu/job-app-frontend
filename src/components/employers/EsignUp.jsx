@@ -1,24 +1,31 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link,useNavigate  } from "react-router-dom";
+
+
 function EsignUp() {
-  const [formData, setFormData] = useState({username:'',email:'',password:''});
+  const [formData, setFormData] = useState({username:"",email:"",password:""});
+  const navigate=useNavigate();
 //   const [username, setUsername] = useState("");
 //   const [email, setEmail] = useState("");
 //   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
-
+  const [message, setmessage] = useState();
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("https://careerconnect-production.up.railway.app/employers", {
+   fetch("https://careerconnect-production.up.railway.app/employers", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({formData}),
-    }).then((r) => {
-      console.log(r);
+      body: JSON.stringify(formData),
+    }).then((response) => {
+      if(response.ok){
+      navigate("/elogin")
+      }else{
+        setmessage("All fields are required!");
+      }
     });
-    setFormData({ username: '', email: '' , password: ''});
+    setFormData({ username: "", email: "" , password: ""});
   }
 
   return (
@@ -181,6 +188,7 @@ function EsignUp() {
                 </p>
               </div>
             </form>
+            <div className="message text-sm text-red-500 col-span-6">{message ? <p>{message}</p> : null}</div>
           </div>
         </main>
       </div>

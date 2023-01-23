@@ -1,42 +1,19 @@
 import React, {useState} from "react";
 
-// const initialState = {
-//   title: "",
-//   category: "",
-//   qualifications: "",
-//   deadline: "",
-//   description: "",
-// };
+
+function Eform() {
 
 
-function Eform({jobs, setJobs}) {
-
-  // const [formData, setFormData] = useState(initialState)
-  const [title, setTitle] = useState("");
-  const [category, setCategory] = useState("");
+  const [job_title, setTitle] = useState("");
+  const [category_id, setCategory] = useState("");
   const [qualifications, setQualifications] = useState("");
   const [deadline, setDeadline] = useState("");
   const [description, setDescription] = useState("");
+const [message,setMessage]=useState()
 
-
-  // function handleSubmit(e) {
-  //   e.preventDefault();
-  //   fetch("/job_listings", {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify({title, category, qualifications, deadline}),
-  //   })
-  //     .then((r) => r.json())
-  //     .then((newJob) => {
-  //       setFormData(initialState);
-  //       console.log("Job posted successfully")
-  //     });
-  // }
   const newList = {
-    title,
-    category,
+    job_title,
+    category_id,
     qualifications,
     deadline,
     description
@@ -53,10 +30,14 @@ function Eform({jobs, setJobs}) {
   const handleSubmit = (e) => {
     e.preventDefault();
     fetch("https://careerconnect-production.up.railway.app/job_listings", configObj)
-      .then((r) => r.json())
       .then((r) => {
-        setJobs([...jobs, r])
-      });
+        if (r.ok){
+          setMessage("Job posted successfull!")
+        }else{
+          setMessage("All field are required")
+        }
+      })
+
     };
   return (
     <div>
@@ -90,7 +71,7 @@ function Eform({jobs, setJobs}) {
                     type="text"
                     id="FirstName"
                     class="w-full mt-1 border-gray-200 rounded-md shadow-sm sm:text-sm"
-                    value={title}
+                    value={job_title}
                     onChange={(e) => setTitle(e.target.value)}
                   />
                 </div>
@@ -109,7 +90,7 @@ function Eform({jobs, setJobs}) {
                       <select
                         id="Country"
                         class="relative w-full border-gray-200 rounded-t-md focus:z-10 sm:text-sm"
-                        value={category}
+                        value={category_id}
                         onChange={(e) => setCategory(e.target.value)}
                       >
                         <option value="1">Human & Resources</option>
@@ -180,6 +161,7 @@ function Eform({jobs, setJobs}) {
                     Post
                   </button>
                 </div>
+                <div className="message text-sm text-green-500 col-span-6">{message ? <p>{message}</p> : null}</div>
               </form>
             </div>
           </div>

@@ -41,7 +41,7 @@ function App() {
     });
   }, []);
 
-if (!user) return <SignUp onLogin={setUser} />;
+// if (!user) return <SignUp onLogin={setUser} />;
 
   return (
     <div className="App">

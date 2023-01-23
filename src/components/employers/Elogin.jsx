@@ -1,36 +1,35 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 
 
-function Elogin({onLogin}){
+function Elogin(){
 const [username, setUsername] = useState("");
 const [password, setPassword] = useState("");
 const [errors, setErrors] = useState([]);
 const [isLoading, setIsLoading] = useState(false);
+const [message, setmessage] = useState();
+const navigate=useNavigate();
 function handleSubmit(e) {
   e.preventDefault();
   setErrors([]);
   setIsLoading(true);
-  fetch("https://careerconnect-production.up.railway.app/employers", {
+  fetch("https://careerconnect-production.up.railway.app/employer/elogin", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({ username, password }),
   })
-    .then((r) => r.json())
-    .then((data) => {
-      setIsLoading(false);
-      if (data.success) {
-        onLogin(data.user);
-      } else {
-        setErrors(data.errors);
+    .then((r)=>{
+      console.log(r)
+      if (r.ok)
+      {
+        navigate("/eform")
+      }else{
+        setmessage("Incorrect username or password");
       }
     })
-    .catch((err) => {
-      setIsLoading(false);
-      setErrors([err]);
-    });
+
 }
 return (
   <section id="Login" className="relative flex flex-wrap lg:h-screen lg:items-center">
@@ -85,7 +84,7 @@ return (
         ))}
       </div>
     )}
-    
+    <div className="message text-sm text-red-500 col-span-6">{message ? <p>{message}</p> : null}</div>
         <p className="text-sm text-gray-500">
           No account?
           <Link to="/esignup" className="underline">

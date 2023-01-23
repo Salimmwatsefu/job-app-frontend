@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate  } from "react-router-dom";
 
 function SignUp({onLogin}) {
 
@@ -7,7 +8,8 @@ function SignUp({onLogin}) {
     const [password, setPassword] = useState("");
     const [passwordConfirmation, setPasswordConfirmation] = useState("");
     const [errors, setErrors] = useState([]);
-
+    const [message, setmessage] = useState();
+const navigate=useNavigate()
       function handleSubmit(e) {
         e.preventDefault();
         fetch("https://careerconnect-production.up.railway.app/signup", {
@@ -23,9 +25,9 @@ function SignUp({onLogin}) {
         }),
     }).then((r) => {
         if (r.ok) {
-            r.json().then((user) => onLogin(user));
+          navigate("/login")
         } else {
-            r.json().then((err) => setErrors(err.errors));
+          setmessage("All fields are required");
         }
     });
     }
@@ -204,7 +206,7 @@ function SignUp({onLogin}) {
               <a href="/Login" class="text-gray-700 underline">Log in</a>.
             </p>
 
-        
+            <div className="message text-sm text-green-500 col-span-6">{message ? <p>{message}</p> : null}</div>
           </div> 
           
         </form>

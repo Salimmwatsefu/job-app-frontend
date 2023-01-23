@@ -1,11 +1,15 @@
 import React, { useState } from "react";
+import { useNavigate  } from "react-router-dom";
 
 
-function Login({onLogin}){
+function Login(){
 const [username, setUsername] = useState("");
 const [password, setPassword] = useState("");
 const [errors, setErrors] = useState([]);
 const [isLoading, setIsLoading] = useState(false);
+const navigate =useNavigate();
+const [message, setmessage] = useState();
+
 function handleSubmit(e) {
   e.preventDefault();
   setErrors([]);
@@ -17,13 +21,11 @@ function handleSubmit(e) {
     },
     body: JSON.stringify({ username, password }),
   })
-    .then((r) => r.json())
-    .then((data) => {
-      setIsLoading(false);
-      if (data.success) {
-        onLogin(data.user);
-      } else {
-        setErrors(data.errors);
+    .then((r) => {
+      if (r.ok){
+        navigate("/")
+      }else{
+        setmessage("Incorrect username or password")
       }
     })
     .catch((err) => {
@@ -88,7 +90,7 @@ return (
         ))}
       </div>
     )}
-    
+    <div className="message text-sm text-red-500 col-span-6">{message ? <p>{message}</p> : null}</div>
         <p className="text-sm text-gray-500">
           No account?
           <a href="/signup" className="underline">
