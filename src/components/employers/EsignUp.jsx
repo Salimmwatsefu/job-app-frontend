@@ -1,31 +1,34 @@
 import { useState } from "react";
-import { Link,useNavigate  } from "react-router-dom";
-
+import { Link, useNavigate } from "react-router-dom";
 
 function EsignUp() {
-  const [formData, setFormData] = useState({username:"",email:"",password:""});
-  const navigate=useNavigate();
-//   const [username, setUsername] = useState("");
-//   const [email, setEmail] = useState("");
-//   const [password, setPassword] = useState("");
+  const [formData, setFormData] = useState({
+    username: "",
+    email: "",
+    password: "",
+  });
+  const navigate = useNavigate();
+  //   const [username, setUsername] = useState("");
+  //   const [email, setEmail] = useState("");
+  //   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
   const [message, setmessage] = useState();
   function handleSubmit(e) {
     e.preventDefault();
-   fetch("https://careerconnect-production.up.railway.app/employers", {
+    fetch("https://careerconnect-production.up.railway.app/employers", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(formData),
     }).then((response) => {
-      if(response.ok){
-      navigate("/elogin")
-      }else{
+      if (response.ok) {
+        navigate("/elogin");
+      } else {
         setmessage("All fields are required!");
       }
     });
-    setFormData({ username: "", email: "" , password: ""});
+    setFormData({ username: "", email: "", password: "" });
   }
 
   return (
@@ -93,8 +96,8 @@ function EsignUp() {
               </h1>
 
               <p class="mt-4 leading-relaxed text-gray-500">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi nam dolorum aliquam, quibusdam aperiam voluptatum.
+                Empowering job seekers to connect, discover and explore
+                opportunities to advance their careers and achieve success
               </p>
             </div>
             <div>
@@ -116,7 +119,9 @@ function EsignUp() {
                   placeholder="  Enter your username..."
                   name="username"
                   value={formData.username}
-                  onChange={(e) => setFormData({...formData,username:e.target.value})}
+                  onChange={(e) =>
+                    setFormData({ ...formData, username: e.target.value })
+                  }
                   class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
                 />
               </div>
@@ -136,7 +141,9 @@ function EsignUp() {
                   name="email"
                   placeholder="  Enter your email address..."
                   value={formData.email}
-                  onChange={(e) => setFormData({...formData,email:e.target.value})}
+                  onChange={(e) =>
+                    setFormData({ ...formData, email: e.target.value })
+                  }
                   class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
                 />
               </div>
@@ -156,7 +163,9 @@ function EsignUp() {
                   name="password"
                   value={formData.password}
                   autoComplete="off"
-                  onChange={(e) => setFormData({...formData,password:e.target.value})}
+                  onChange={(e) =>
+                    setFormData({ ...formData, password: e.target.value })
+                  }
                   class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
                 />
               </div>
@@ -188,7 +197,9 @@ function EsignUp() {
                 </p>
               </div>
             </form>
-            <div className="message text-sm text-red-500 col-span-6">{message ? <p>{message}</p> : null}</div>
+            <div className="message text-sm text-red-500 col-span-6">
+              {message ? <p>{message}</p> : null}
+            </div>
           </div>
         </main>
       </div>
