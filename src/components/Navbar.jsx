@@ -7,8 +7,8 @@ function Navbar() {
 
 
   return (
-    <div>
-     <header aria-label="Site Header" class="bg-white h-16  ">
+    <div className=''>
+     <header aria-label="Site Header" class=" h-16  ">
   <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 ">
     <div class="flex h-16 items-center justify-between ">
       <div class="md:flex md:items-center md:gap-12 ">
@@ -16,7 +16,7 @@ function Navbar() {
           <span class="sr-only">Home</span>
 
 
-          <img src='./Image/image2.png' className='' style={{width:"140px"}}/>
+          <img src='./Image/image2.png' className='mt-3' style={{width:"140px"}}/>
 
         
           
@@ -25,10 +25,10 @@ function Navbar() {
       </div>
 
       <div className="hidden md:block">
-        <nav aria-label="Site Nav">
-          <ul className="flex items-center gap-14 text-sm font-medium pr-16">
+        <nav aria-label="Site Nav" className=''>
+          <ul className="flex items-center gap-14 text-sm font-medium pr-16 my-auto ">
             <NavLink to="/">
-            <li className="text-black transition hover:text-gray-500/75">
+            <li className="text-black transition  hover:bg-blue-500 p-2 hover:rounded-3xl active:to-blue-400">
                 Home
             </li>
             </NavLink>
@@ -37,7 +37,7 @@ function Navbar() {
            <NavLink to="/jobs">
             <li
              
-                className="text-black transition hover:text-gray-500/75">
+                className="text-black transition hover:bg-blue-500 p-2 hover:rounded-3xl active:to-blue-400">
              
                 Browse Jobs
             
@@ -45,8 +45,8 @@ function Navbar() {
             </NavLink>
 
 
-            <NavLink to={"ehome"}>
-            <li className="text-black transition hover:text-gray-500/75" >
+            <NavLink to="/ehome" >
+            <li className="text-black transition hover:bg-blue-500 p-2 hover:rounded-3xl active:to-blue-400" >
                 For Employers
              
             </li>
@@ -54,7 +54,7 @@ function Navbar() {
 
             <NavLink to={"/blog"}>
             <li
-                className="text-black transition hover:text-gray-500/75"
+                className="text-black transition hover:bg-blue-500 p-2 hover:rounded-3xl active:to-blue-400"
               >
                 Blog
              
@@ -62,15 +62,15 @@ function Navbar() {
             </NavLink>
            
             <NavLink to={"contact"}>
-            <li className="text-black transition hover:text-gray-500/75">
+            <li className="text-black transition hover:bg-blue-500 hover:text-white p-2 hover:rounded-3xl active:to-blue-400">
               Contacts
              </li>
             </NavLink>
             
 
      
-    <Dropdown>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
+    <Dropdown className='bg-blue-500 rounded-md'>
+      <Dropdown.Toggle  id="dropdown-basic">
         Account
       </Dropdown.Toggle>
 

@@ -23,9 +23,9 @@ function Contact() {
       );
   }
   return (
-    <div className="w-full flex items-center justify-center my-8">
+    <div className="w-full flex items-center justify-center py-8 bg-gray-100">
       <form ref={form} onSubmit={sendEmail}>
-        <div className=" bg-white shadow rounded py-2 lg:px-28 px-8">
+        <div className=" bg-white shadow rounded pt-20 lg:px-28 px-8 ">
           <p className="md:text-3xl text-xl font-bold leading-7 text-center text-gray-700">
             Let’s chat and get a quote!
           </p>
@@ -94,7 +94,7 @@ function Contact() {
           <div className="flex items-center justify-center w-full">
             <button
               type="submit"
-              className="mt-9 text-base font-semibold leading-none text-white py-4 px-10 bg-indigo-700 rounded hover:bg-indigo-600 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:outline-none"
+              className="mt-9 mb-10 text-base font-semibold leading-none text-white py-4 px-10 bg-blue-600 rounded hover:bg-indigo-600 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:outline-none"
             >
               Send message
             </button>

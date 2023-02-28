@@ -9,7 +9,7 @@ const initialState = {
 };
 
 
-function Eform({onAddJob}) {
+function Eform( ) {
 
   const [formData, setFormData] = useState(initialState)
   const [title, setTitle] = useState("");
@@ -26,12 +26,12 @@ function Eform({onAddJob}) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({title, category, qualifications, deadline}),
+      body: JSON.stringify({title, category, qualifications, description, deadline}),
     })
       .then((r) => r.json())
       .then((newJob) => {
         setFormData(initialState);
-        onAddJob(newJob);
+        console.log("Job posted successfully")
       });
   }
   return (

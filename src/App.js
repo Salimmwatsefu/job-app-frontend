@@ -63,6 +63,8 @@ function App() {
       <Route path="/signup"  element={<SignUp />} />
       <Route path="/Login"  element={<Login />} />
 
+      <Route path="/signup" exact component= {Logout} setUser ={setUser} />
+     
 
       </Routes>
 </div>

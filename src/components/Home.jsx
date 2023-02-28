@@ -17,7 +17,9 @@ function Home() {
       <About />
        <Categories />
       <CustomerCards />
+      <div className='bg-gray-50'>
       <JobsCards />
+      </div>
       <Footer />
     </div>
     

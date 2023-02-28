@@ -10,8 +10,6 @@ const FeaturedJobsCard = (props) => {
         <div>{props.employmentType}</div>
       </div>
     </div>
-    </div>
-    </div>
   );
 }
 
