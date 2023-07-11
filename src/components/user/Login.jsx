@@ -34,20 +34,27 @@ function handleSubmit(e) {
     });
 }
 return (
-  <section id="Login" className="relative flex flex-wrap lg:h-screen lg:items-center">
-    <div className="relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2" style={{float:'right'}}>
-      <img
-        alt="Welcome"
-        src="https://images.unsplash.com/photo-1529539795054-3c162aab037a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-        className="object-cover h-64 w-full sm:h-96 lg:h-full lg:w-full"
-/>
+  <section id="Login" className="relative flex flex-wrap lg:h-[87vh] lg:items-center ">
+    <div className="relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2 bg-[#FCF5EB] lg:-mt-0" >
+
+
+    <div className="lg:relative lg:block lg:p-12 md:mt-52 mt-20 mx-2">
+            
+            <h2 class="mt-6 text-2xl font-bold text-[#BA4B2F] sm:text-3xl md:text-4xl">
+              Welcome back to Career Connect
+            </h2>
+
+            <p class="mt-4 leading-relaxed text-[#BA4B2F]/90">
+              Please Log In to continue if already have an account
+            </p>
+          </div>
+      
     </div>
     <div className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24" style={{float:'left'}}>
 <div className="mx-auto max-w-lg text-center">
-<h1 className="text-2xl font-bold sm:text-3xl">Get started today!</h1>
+<h1 className="text-2xl font-bold sm:text-3xl text-[#BA4B2F]" >Hello!</h1>
 <p className="mt-4 text-gray-500">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et libero nulla
-      eaque error neque ipsa culpa autem, at itaque nostrum!
+      Login here if you already have an existing account
     </p>
   </div>
   <form onSubmit={handleSubmit} className="mx-auto mt-8 mb-0 max-w-md space-y-4">
@@ -91,15 +98,15 @@ return (
       </div>
     )}
     <div className="message text-sm text-red-500 col-span-6">{message ? <p>{message}</p> : null}</div>
-        <p className="text-sm text-gray-500">
+        <p className="text-sm text-gray-500 text-center ">
           No account?
-          <a href="/signup" className="underline">
+          <a href="/signup" className="underline text-red-700 ml-2">
             Sign up
           </a>
         </p>
         <button
           type="submit"
-          className="ml-3 inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white"
+          className="md:ml-40 ml-28 bg-[#BA4B2F] px-5 py-3 text-sm font-medium text-slate-50  hover:bg-white/40 hover:shadow hover:text-[#BA4B2F] transition-all duration-500 "
         >
           {isLoading ? "Loading..." : "Sign in"}
         </button>

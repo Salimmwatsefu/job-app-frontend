@@ -29,7 +29,7 @@ const [message,setMessage]=useState()
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("https://careerconnect-production.up.railway.app/job_listings", configObj)
+    fetch("http://127.0.0.1:3000/job_listings", configObj)
       .then((r) => {
         if (r.ok){
           setMessage("Job posted successfull!")

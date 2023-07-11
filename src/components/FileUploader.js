@@ -36,7 +36,7 @@ function FileUploader() {
       .then(
         (result) => {
           console.log(result.text);
-          setmessage("Application submited succesfull");
+          setmessage("Application submited succesfully");
         },
         (error) => {
           console.log(error.text);
@@ -47,45 +47,49 @@ function FileUploader() {
   return (
     <div align="center">
       <div
-        className="jumbotron"
-        style={{ backgroundColor: "#fce4d8", height: "90vh" }}
+        className=""
       >
-        <h1 className="display-4">Hello, Welcome!</h1>
-        <h2>Thank you for choosing Career Connect</h2>
+        
+        <h1 className="pt-3 text-amber-700">Hello, Welcome!</h1>
+        <h2 className=" text-amber-600">Thank you for choosing Career Connect</h2>
         <br />
-        <p className="lead">
+        <p className="">
           This is a simple Application that guarantees a connection to your
           employer
         </p>
-        <hr className="my-4" />
+        <hr className="my-4 mx-20 text-black" />
         <br />
         <p>
           We are glad to forward your CV to the associated employer by simply
-          uploading it below. Please attach your file in PDF.
+          uploading it below.<br/>Please attach your file in PDF.
         </p>
         <br />
         <div className="message text-sm text-green-500 col-span-6">{message ? <p>{message}</p> : null}</div>
-        <h4>Fill this Application form</h4>
+        
+        <h4 className="pb-3 text-amber-700">Fill this Application form</h4>
         <p className="lead">
           <form
             ref={form}
             enctype="multipart/form-data"
-            style={{ borderRadius: "1em" }}
+            className="bg-white shadow md:w-[400px] w-[370px] py-3"
           >
-            <input type="text" name="name" placeholder="Name" />
+            <label htmlFor="fullName " className="font-semibold text-sm">Enter your fullname:</label>
+            <input type="text" name="name" placeholder="Name" className=" rounded-none" />
             <br />
+            <label htmlFor="email " className="font-semibold text-sm">Enter your email address:</label>
             <input type="text" name="email" placeholder="Email" />
             <br />
+            <label htmlFor="fullName " className="font-semibold text-sm">Upload your resume:</label>
             <input
               type="file"
               name="message"
               onChange={addFile}
-              style={{ backgroundColor: "#fce4d8" }}
+              
             />
 
-            <div>{file && `${file.name} - ${file.type}`}</div>
+            <div className="text-black font-semibold">{file && `${file.name} - ${file.type}`}</div>
 
-            <button className="btn btn-primary" onClick={sendEmail}>
+            <button className="bg-[#BA4B2F] px-3 py-2 rounded-lg text-white text-sm font-semibold" onClick={sendEmail}>
               Upload
             </button>
           </form>

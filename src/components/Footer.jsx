@@ -3,12 +3,12 @@ import React from "react";
 function Footer() {
   return (
     <div>
-      <footer aria-label="Site Footer" class="bg-gray-800">
+      <footer aria-label="Site Footer" class="bg-[#BA4B2F]">
         <div class="mx-auto max-w-screen-xl px-4 pt-16 pb-6 sm:px-6 lg:px-8 lg:pt-24">
           <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
-              <h1 className="text-lg text-white">Career Connect</h1>
-              <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-400 sm:mx-0 sm:max-w-xs sm:text-left">
+              <h1 className="text-lg text-white md:mx-0 mx-[100px]">Career Connect</h1>
+              <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-white sm:mx-0 sm:max-w-xs sm:text-left">
                 Empowering job seekers to connect, discover and explore
                 opportunities to advance their careers and achieve success
               </p>
@@ -19,7 +19,7 @@ function Footer() {
                     href="https://www.facebook.com/profile.php?id=100089460190476"
                     rel="noreferrer"
                     target="https://www.facebook.com/profile.php?id=100089460190476"
-                    class="text-teal-700 transition hover:text-teal-700/75"
+                    class="text-white transition hover:text-white/75"
                   >
                     <span class="sr-only">Facebook</span>
                     <svg
@@ -42,7 +42,7 @@ function Footer() {
                     href="https://www.instagram.com/career_connect254/"
                     rel="noreferrer"
                     target="https://www.instagram.com/career_connect254/"
-                    class="text-teal-700 transition hover:text-teal-700/75"
+                    class="text-white transition hover:text-white/75"
                   >
                     <span class="sr-only">Instagram</span>
                     <svg
@@ -65,7 +65,7 @@ function Footer() {
                     href="https://twitter.com/CareerConnect13"
                     rel="noreferrer"
                     target="https://twitter.com/CareerConnect13"
-                    class="text-teal-700 transition hover:text-teal-700/75"
+                    class="text-white transition hover:text-white/75"
                   >
                     <span class="sr-only">Twitter</span>
                     <svg
@@ -84,7 +84,7 @@ function Footer() {
                     href="https://github.com/Salimmwatsefu/job-app-frontend"
                     rel="noreferrer"
                     target="https://github.com/Salimmwatsefu/job-app-frontend"
-                    class="text-teal-700 transition hover:text-teal-700/75"
+                    class="text-white transition hover:text-white/75"
                   >
                     <span class="sr-only">GitHub</span>
                     <svg
@@ -107,7 +107,7 @@ function Footer() {
                     href="/"
                     rel="noreferrer"
                     target="_blank"
-                    class="text-teal-700 transition hover:text-teal-700/75"
+                    class="text-white transition hover:text-white/75"
                   >
                     <span class="sr-only">Dribbble</span>
                     <svg
@@ -127,15 +127,15 @@ function Footer() {
               </ul>
             </div>
 
-            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
-              <div class="text-center sm:text-left">
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2  ">
+              <div class="text-center sm:text-left md:block hidden">
                 <p class="text-lg font-medium text-white">About Us</p>
 
                 <nav aria-label="Footer About Nav" class="mt-8">
                   <ul class="space-y-4 text-sm">
                     <li>
                       <a
-                        class="text-gray-400 transition hover:text-gray-700/75"
+                        class="text-white transition hover:text-gray-700/75"
                         href="/"
                       >
                         Company History
@@ -144,7 +144,7 @@ function Footer() {
 
                     <li>
                       <a
-                        class="text-gray-400 transition hover:text-gray-700/75"
+                        class="text-white transition hover:text-gray-700/75"
                         href="/"
                       >
                         Meet the Team
@@ -153,7 +153,7 @@ function Footer() {
 
                     <li>
                       <a
-                        class="text-gray-400 transition hover:text-gray-700/75"
+                        class="text-white transition hover:text-gray-700/75"
                         href="/"
                       >
                         Employee Handbook
@@ -162,7 +162,7 @@ function Footer() {
 
                     <li>
                       <a
-                        class="text-gray-400 transition hover:text-gray-700/75"
+                        class="text-white transition hover:text-gray-700/75"
                         href="/"
                       >
                         Careers
@@ -172,14 +172,14 @@ function Footer() {
                 </nav>
               </div>
 
-              <div class="text-center sm:text-left">
+              <div class="text-center sm:text-left md:block hidden">
                 <p class="text-lg font-medium text-white">Our Services</p>
 
                 <nav aria-label="Footer Services Nav" class="mt-8">
                   <ul class="space-y-4 text-sm">
                     <li>
                       <a
-                        class="text-gray-400 transition hover:text-gray-700/75"
+                        class="text-white transition hover:text-gray-700/75"
                         href="/"
                       >
                         Web Development
@@ -188,7 +188,7 @@ function Footer() {
 
                     <li>
                       <a
-                        class="text-gray-400 transition hover:text-gray-700/75"
+                        class="text-white transition hover:text-gray-700/75"
                         href="/"
                       >
                         Web Design
@@ -197,7 +197,7 @@ function Footer() {
 
                     <li>
                       <a
-                        class="text-gray-400 transition hover:text-gray-700/75"
+                        class="text-white transition hover:text-gray-700/75"
                         href="/"
                       >
                         Marketing
@@ -206,7 +206,7 @@ function Footer() {
 
                     <li>
                       <a
-                        class="text-gray-400 transition hover:text-gray-700/75"
+                        class="text-white transition hover:text-gray-700/75"
                         href="/"
                       >
                         Google Ads
@@ -216,14 +216,14 @@ function Footer() {
                 </nav>
               </div>
 
-              <div class="text-center sm:text-left">
+              <div class="text-center sm:text-left md:block hidden">
                 <p class="text-lg font-medium text-white">Helpful Links</p>
 
                 <nav aria-label="Footer Helpful Nav" class="mt-8">
                   <ul class="space-y-4 text-sm">
                     <li>
                       <a
-                        class="text-gray-400 transition hover:text-gray-700/75"
+                        class="text-white transition hover:text-gray-700/75"
                         href="/"
                       >
                         FAQs
@@ -232,7 +232,7 @@ function Footer() {
 
                     <li>
                       <a
-                        class="text-gray-400 transition hover:text-gray-700/75"
+                        class="text-white transition hover:text-gray-700/75"
                         href="/"
                       >
                         Support
@@ -244,7 +244,7 @@ function Footer() {
                         class="group flex justify-center gap-1.5 sm:justify-start"
                         href="/"
                       >
-                        <span class="text-gray-400 transition group-hover:text-gray-700/75">
+                        <span class="text-white transition group-hover:text-gray-700/75">
                           Help
                         </span>
                       </a>
@@ -253,7 +253,7 @@ function Footer() {
                 </nav>
               </div>
 
-              <div class="text-center sm:text-left">
+              <div class="text-center sm:text-left md:block hidden">
                 <p class="text-lg font-medium text-white">Contact Us</p>
 
                 <ul class="mt-8 space-y-4 text-sm">
@@ -277,7 +277,7 @@ function Footer() {
                         />
                       </svg>
 
-                      <span class="text-gray-400">group22.com</span>
+                      <span class="text-white">group22.com</span>
                     </a>
                   </li>
 
@@ -301,14 +301,14 @@ function Footer() {
                         />
                       </svg>
 
-                      <span class="text-gray-400">0123456789</span>
+                      <span class="text-white">0123456789</span>
                     </a>
                   </li>
 
                   <li class="flex items-start justify-center gap-1.5 sm:justify-start">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5 shrink-0 text-gray-900"
+                      class="h-5 w-5 shrink-0 text-white"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -326,7 +326,7 @@ function Footer() {
                       />
                     </svg>
 
-                    <address class="-mt-0.5 not-italic text-gray-400">
+                    <address class="-mt-0.5 not-italic text-white">
                       Nairobi, Kenya
                     </address>
                   </li>
@@ -337,11 +337,11 @@ function Footer() {
 
           <div class="mt-12 border-t border-gray-100 pt-6">
             <div class="text-center sm:flex sm:justify-between sm:text-left">
-              <p class="text-sm text-gray-500">
+              <p class="text-sm text-white">
                 <span class="block sm:inline">All rights reserved.</span>
 
                 <a
-                  class="inline-block text-teal-600 underline transition hover:text-teal-600/75"
+                  class="inline-block text-white underline transition hover:text-teal-600/75"
                   href="/"
                 >
                   Terms & Conditions
@@ -350,14 +350,14 @@ function Footer() {
                 <span>&middot;</span>
 
                 <a
-                  class="inline-block text-teal-600 underline transition hover:text-teal-600/75"
+                  class="inline-block text-white underline transition hover:text-teal-600/75"
                   href="/"
                 >
                   Privacy Policy
                 </a>
               </p>
 
-              <p class="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
+              <p class="mt-4 text-sm text-white sm:order-first sm:mt-0">
                 &copy; 2023 Career Connect
               </p>
             </div>

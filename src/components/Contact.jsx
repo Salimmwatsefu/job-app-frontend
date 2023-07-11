@@ -29,12 +29,12 @@ function Contact() {
     <div className="w-full flex items-center justify-center my-8">
       <form ref={form} onSubmit={sendEmail}>
         <div className=" bg-white shadow rounded py-2 lg:px-28 px-8">
-          <p className="md:text-3xl text-xl font-bold leading-7 text-center text-gray-700">
+          <p className="md:text-3xl text-xl font-bold leading-7 text-center text-[#BA4B2F]">
             Let’s chat and get a quote!
           </p>
-          <div className="md:flex items-center mt-2">
+          <div className="md:flex items-center mt-4">
             <div className="md:w-50 flex flex-col">
-              <label className="text-base font-semibold leading-none text-gray-800">
+              <label className="text-base font-semibold leading-none text-[#BA4B2F]">
                 Name
               </label>
               <input
@@ -46,8 +46,8 @@ function Contact() {
                 placeholder="Please input  name"
               />
             </div>
-            <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
-              <label className="text-base font-semibold leading-none text-gray-800">
+            <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 ">
+              <label className="text-base font-semibold leading-none text-[#BA4B2F]">
                 Email Address
               </label>
               <input
@@ -62,7 +62,7 @@ function Contact() {
           </div>
           <div className="md:flex items-center mt-8">
             <div className="md:w-72 flex flex-col">
-              <label className="text-base font-semibold leading-none text-gray-800">
+              <label className="text-base font-semibold leading-none text-[#BA4B2F]">
                 Subject
               </label>
               <input
@@ -77,7 +77,7 @@ function Contact() {
           </div>
           <div>
             <div className="w-full flex flex-col mt-8">
-              <label className="text-base font-semibold leading-none text-gray-800">
+              <label className="text-base font-semibold leading-none text-[#BA4B2F]">
                 Message
               </label>
               <textarea
@@ -97,7 +97,7 @@ function Contact() {
           <div className="flex items-center justify-center w-full">
             <button
               type="submit"
-              className="mt-9 text-base font-semibold leading-none text-white py-4 px-10 bg-indigo-700 rounded hover:bg-indigo-600 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:outline-none"
+              className="bg-[#BA4B2F] px-3 py-2 rounded-lg text-white text-sm font-semibold mt-9"
             >
               Send message
             </button>

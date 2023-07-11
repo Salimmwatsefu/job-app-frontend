@@ -12,10 +12,9 @@ function Home() {
 
 
   return (
-    <div>
+    <div className='sm:w-full w-auto'>
       <Hero />
       <About />
-       <Categories />
       <CustomerCards />
       <JobsCards />
       <Footer />

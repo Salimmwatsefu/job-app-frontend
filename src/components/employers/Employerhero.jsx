@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Employerhero() {
   return (
-    <section class="bg-gray-900 text-white">
+    <section class="bg-gray-900 text-white h-screen">
   <div
     class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center"
   >
@@ -27,9 +27,6 @@ function Employerhero() {
         >
           Register
         </Link>
-      </div>
-      <div class="mt-8 flex flex-wrap justify-center gap-4">
-        <h3>Already sign up? </h3>
         <Link
           class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
           to="/elogin"
@@ -37,6 +34,7 @@ function Employerhero() {
           Login
         </Link>
       </div>
+      
     </div>
   </div>
 </section>

@@ -27,14 +27,14 @@ function App() {
 
 
   useEffect(() => {
-    fetch("https://careerconnect-production.up.railway.app/job_listings")
+    fetch("http://127.0.0.1:3000/job_listings")
     .then((res)=>res.json())
     .then((jobs)=> setJobs(jobs))
   }, [])
 
   useEffect(() => {
     //auto-login
-    fetch("https://careerconnect-production.up.railway.app/me").then((r) => {
+    fetch("http://127.0.0.1:3000/me").then((r) => {
       if (r.ok) {
         r.json().then((user) => setUser(user));
       }
@@ -44,8 +44,10 @@ function App() {
 // if (!user) return <SignUp onLogin={setUser} />;
 
   return (
-    <div className="App">
+    <div className="App !overflow-x-hidden">
+      
         <Navbar setUser={setUser}/>
+
      <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/loading' element={<Loading/>}/>

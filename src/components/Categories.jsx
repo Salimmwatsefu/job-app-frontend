@@ -6,7 +6,7 @@ function Categories() {
   
 
   useEffect(() => {
-    fetch("https://careerconnect-production.up.railway.app/categories")
+    fetch("http://127.0.0.1:3000/categories")
       .then((res) => res.json())
       .then((data) => {
         setCategoriess(data);

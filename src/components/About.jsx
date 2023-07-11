@@ -5,40 +5,23 @@ function About() {
   return (
     <div id="about">
       <div className="">
-  <div class=" bg-gray-50 p-6 shadow-sm">
-    <button
-      type="button"
-      class="absolute -top-1 -right-1 rounded-full border border-gray-200 bg-white p-1 text-gray-400"
-    >
-      <span class="sr-only">Close</span>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-3 w-3"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-          clip-rule="evenodd"
-        />
-      </svg>
-    </button>
+  <div class=" bg-[#BA4B2F] pt-6 shadow-sm md:h-[98vh]">
+    
 
-    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 mt-20">
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:mt-[59px] ">
       <img
         alt="Laptop"
-        src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+        src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2FyZWVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=1600&q=100"
        
-        class="h-full w-full rounded-xl object-cover"
+        class="h-[550px] ml-20 w-[480px] rounded-t-full object-cover hidden md:block"
       />
 
-      <div>
-        <h2 class="text-2xl font-bold text-gray-800">
+      <div className='md:ml-14 ml-5'>
+        <h2 class="md:text-6xl font-bold text-white ">
           About Us
         </h2>
 
-        <p class="mt-4 text-sm text-gray-500">
+        <p class="mt-4 md:text-base text-sm text-white md:w-[480px]">
         Welcome to our job website! We are a dedicated team of
                 professionals committed to connecting job seekers with their
                 dream careers. Our website offers a wide variety of job listings
@@ -54,10 +37,10 @@ function About() {
                 seekers are not scammed.
         </p>
 
-        <div class="mt-6 sm:text-right">
+        <div class="mt-10 md:pb-0 pb-7 ">
           <Link
             to="/signup"
-            class="inline-block rounded-lg bg-gray-800 hover:bg-gray-600 px-5 py-3 text-sm font-medium text-white"
+            class="inline-block  border-white border-2 hover:bg-white hover:text-[#BA4B2F] text-slate-50 transition-all duration-500 px-5 py-3 text-sm font-bold "
           >
             Get Started
           </Link>
